@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Welcome" id="BYZ-38-t0r" customClass="ViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="us2-zd-cF8">
+                                <rect key="frame" x="145" y="182" width="85" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bbn-8a-vrI"/>
+                                    <segue destination="YQ4-et-RQG" kind="show" id="lv7-6z-hSy"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mvw-QV-zMR">
+                                <rect key="frame" x="116" y="144" width="142" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dqi-iq-99L">
+                                <rect key="frame" x="67" y="81" width="240" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Hi, we're Philia!
+What's your name?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1nr-G6-dRF"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="anotherTextLabel" destination="dqi-iq-99L" id="2pp-ME-CcJ"/>
+                        <outlet property="backgroundImageView" destination="8bC-Xf-vdC" id="3Es-15-hty"/>
+                        <outlet property="textField" destination="Mvw-QV-zMR" id="awa-wU-iml"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1251.5" y="371.5"/>
+        </scene>
+        <!--Pick Interest-->
+        <scene sceneID="F7N-Dz-IM3">
+            <objects>
+                <viewController title="Pick Interest" id="YQ4-et-RQG" customClass="SecondViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aiv-9a-lMR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wve-Yr-KZU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RRh-Z1-cX5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soP-ZL-Axy">
+                                <rect key="frame" x="72" y="185" width="70" height="40"/>
+                                <accessibility key="accessibilityConfiguration" label="nature"/>
+                                <state key="normal" title="nature"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="L0S-2C-3bQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEP-vT-UoZ">
+                                <rect key="frame" x="152" y="185" width="70" height="40"/>
+                                <state key="normal" title="culture"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="6Y5-Nw-2Ke"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caM-SQ-ScV">
+                                <rect key="frame" x="232" y="185" width="70" height="40"/>
+                                <state key="normal" title="ambition"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="UZd-Ql-LSh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwD-s3-lUO">
+                                <rect key="frame" x="72" y="233" width="70" height="40"/>
+                                <state key="normal" title="career"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="ZMe-Kc-ffb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edU-dM-dat">
+                                <rect key="frame" x="152" y="233" width="70" height="40"/>
+                                <state key="normal" title="travel"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="S3I-Af-3ha"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="32" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K5-Xd-ys6">
+                                <rect key="frame" x="232" y="233" width="70" height="40"/>
+                                <state key="normal" title="education"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="jjF-q2-Pan"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="64" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sL3-CC-1bk">
+                                <rect key="frame" x="72" y="287" width="70" height="40"/>
+                                <state key="normal" title="fashion"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="818-5m-6BE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="128" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecw-vS-trU">
+                                <rect key="frame" x="152" y="287" width="70" height="40"/>
+                                <state key="normal" title="ethics"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="bmf-AX-V1A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="256" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ER3-WO-zdf">
+                                <rect key="frame" x="232" y="287" width="70" height="40"/>
+                                <state key="normal" title="religion"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="zy3-gz-ShM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="512" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuT-AD-5kx">
+                                <rect key="frame" x="72" y="340" width="70" height="40"/>
+                                <state key="normal" title="power"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="JLm-MB-DwB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1024" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tb2-s6-fKh">
+                                <rect key="frame" x="152" y="340" width="70" height="40"/>
+                                <state key="normal" title="wealth"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="MY5-dN-Ros"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2048" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CU-ef-vdR">
+                                <rect key="frame" x="232" y="340" width="70" height="40"/>
+                                <state key="normal" title="drive"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="GFl-GB-4pz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4096" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDz-ql-it3">
+                                <rect key="frame" x="72" y="393" width="70" height="40"/>
+                                <state key="normal" title="beauty"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="lOs-ds-s9j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8192" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyR-qS-7xz">
+                                <rect key="frame" x="152" y="393" width="70" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="yWY-Mg-8tp"/>
+                                </constraints>
+                                <state key="normal" title="family"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="v8H-25-FsX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="16384" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uty-gw-dzY">
+                                <rect key="frame" x="232" y="393" width="70" height="40"/>
+                                <state key="normal" title="fitness"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="Ngf-en-j3E"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRk-ZJ-N4P">
+                                <rect key="frame" x="67" y="64" width="240" height="107"/>
+                                <string key="text">Awesome to meet you!
+Pick your 3 fav things about life:</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTp-6Z-Ska">
+                                <rect key="frame" x="139" y="502" width="127" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="32768" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMI-G0-u31">
+                                <rect key="frame" x="72" y="441" width="70" height="40"/>
+                                <state key="normal" title="food"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="jop-yz-Pxi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="65536" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVG-sR-pr0">
+                                <rect key="frame" x="152" y="441" width="70" height="40"/>
+                                <state key="normal" title="books"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="f1e-Mb-UBt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="131072" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8j-xV-ASi">
+                                <rect key="frame" x="232" y="441" width="70" height="40"/>
+                                <state key="normal" title="artistry"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="RAv-q3-Qx1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ambition" destination="caM-SQ-ScV" id="s7e-px-2i8"/>
+                        <outlet property="answerLabel" destination="bTp-6Z-Ska" id="Abe-lr-wrN"/>
+                        <outlet property="artistryButton" destination="e8j-xV-ASi" id="oRH-1L-1Rn"/>
+                        <outlet property="beautyButton" destination="YDz-ql-it3" id="ZuE-Io-k4a"/>
+                        <outlet property="booksButton" destination="uVG-sR-pr0" id="E83-BQ-Nsu"/>
+                        <outlet property="careerButton" destination="CwD-s3-lUO" id="FZ2-1L-zmu"/>
+                        <outlet property="cultureButton" destination="jEP-vT-UoZ" id="YoD-ST-BDJ"/>
+                        <outlet property="driveButton" destination="6CU-ef-vdR" id="JCn-kc-PtA"/>
+                        <outlet property="educationButton" destination="8K5-Xd-ys6" id="iFG-OO-EwV"/>
+                        <outlet property="ethicsButton" destination="ecw-vS-trU" id="fVl-oE-BIH"/>
+                        <outlet property="familyButton" destination="JyR-qS-7xz" id="Nr0-KK-ZTJ"/>
+                        <outlet property="fashionButton" destination="sL3-CC-1bk" id="kyw-5R-U2s"/>
+                        <outlet property="fitnessButton" destination="uty-gw-dzY" id="Ivx-CF-TPo"/>
+                        <outlet property="foodButton" destination="XMI-G0-u31" id="Gq0-wb-A23"/>
+                        <outlet property="messageLabel" destination="FRk-ZJ-N4P" id="Tjc-Dy-dYm"/>
+                        <outlet property="natureButton" destination="soP-ZL-Axy" id="nPP-xF-DUQ"/>
+                        <outlet property="powerButton" destination="xuT-AD-5kx" id="fKr-og-Rxr"/>
+                        <outlet property="religionButton" destination="ER3-WO-zdf" id="gXr-1S-iCb"/>
+                        <outlet property="travelButton" destination="edU-dM-dat" id="gXj-cN-Hw0"/>
+                        <outlet property="wealthButton" destination="tb2-s6-fKh" id="e9n-1v-chF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jma-oe-lwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1663.5" y="371.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XgM-Mk-W5Y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kVF-KP-YLT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QbE-8v-RMg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tDi-63-hkx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPa-ye-1AA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439" y="371"/>
+        </scene>
+    </scenes>
+</document>
