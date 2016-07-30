@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kVF-KP-YLT">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Welcome-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Welcome" id="BYZ-38-t0r" customClass="ViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -53,10 +53,10 @@ What's your name?</string>
             </objects>
             <point key="canvasLocation" x="1251.5" y="371.5"/>
         </scene>
-        <!--Pick Interest-->
+        <!--Second View Controller-->
         <scene sceneID="F7N-Dz-IM3">
             <objects>
-                <viewController storyboardIdentifier="secondViewController" title="Pick Interest" id="YQ4-et-RQG" customClass="SecondViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secondViewController" id="YQ4-et-RQG" customClass="SecondViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aiv-9a-lMR"/>
                         <viewControllerLayoutGuide type="bottom" id="Wve-Yr-KZU"/>
@@ -233,10 +233,10 @@ Pick your 3 fav things about life:</string>
             </objects>
             <point key="canvasLocation" x="1663.5" y="371.5"/>
         </scene>
-        <!--Gender Preference Picker-->
+        <!--Third View Controller-->
         <scene sceneID="A4u-IP-xer">
             <objects>
-                <viewController storyboardIdentifier="thirdViewController" title="Gender Preference Picker" id="Xl6-zn-wPt" customClass="ThirdViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="thirdViewController" id="Xl6-zn-wPt" customClass="ThirdViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vm3-2a-MVN"/>
                         <viewControllerLayoutGuide type="bottom" id="gOY-CT-LhQ"/>
@@ -272,8 +272,8 @@ Pick your 3 fav things about life:</string>
                                     <action selector="pressedButton:" destination="Xl6-zn-wPt" eventType="touchUpInside" id="WO7-ph-lcy"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oC2-Ag-gRW">
-                                <rect key="frame" x="131" y="301" width="136" height="67"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oC2-Ag-gRW">
+                                <rect key="frame" x="69" y="301" width="198" height="120"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -293,10 +293,10 @@ Pick your 3 fav things about life:</string>
             </objects>
             <point key="canvasLocation" x="2064.5" y="371.5"/>
         </scene>
-        <!--Intention Picker-->
+        <!--Fourth View Controller-->
         <scene sceneID="Ecd-rD-V20">
             <objects>
-                <viewController storyboardIdentifier="fourthViewController" title="Intention Picker" id="4rM-Yk-KBB" customClass="FourthViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="fourthViewController" id="4rM-Yk-KBB" customClass="FourthViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kCv-EB-8qZ"/>
                         <viewControllerLayoutGuide type="bottom" id="zKa-87-ipr"/>
@@ -335,8 +335,8 @@ and once you find your
                                     <action selector="pressedButton:" destination="4rM-Yk-KBB" eventType="touchUpInside" id="a2l-HQ-5Bo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wE-GW-rwo">
-                                <rect key="frame" x="60" y="358" width="122" height="66"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7X-sZ-bPA">
+                                <rect key="frame" x="61" y="439" width="253" height="107"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -347,7 +347,7 @@ and once you find your
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="curiousButton" destination="v2E-3f-SJE" id="TVJ-33-NqB"/>
-                        <outlet property="debugLabel" destination="1wE-GW-rwo" id="WUc-6J-wng"/>
+                        <outlet property="debugLabel" destination="t7X-sZ-bPA" id="a0c-qJ-yAU"/>
                         <outlet property="dynamicHeaderLabel" destination="Fhz-uf-kfT" id="lyo-ww-k2Q"/>
                         <outlet property="hangoutButton" destination="X6C-9u-Dtb" id="03e-qA-Vb7"/>
                         <outlet property="marriageButton" destination="joa-Zs-Eu3" id="Zfh-nA-n8D"/>
@@ -357,10 +357,10 @@ and once you find your
             </objects>
             <point key="canvasLocation" x="2476.5" y="371.5"/>
         </scene>
-        <!--Finished Onboarding-->
+        <!--Fifth View Controller-->
         <scene sceneID="ds7-7s-aAg">
             <objects>
-                <viewController storyboardIdentifier="fifthViewController" title="Finished Onboarding" id="ifO-MJ-TVG" customClass="FifthViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="fifthViewController" id="ifO-MJ-TVG" customClass="FifthViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lfc-XU-hJ4"/>
                         <viewControllerLayoutGuide type="bottom" id="FXp-PT-QlJ"/>
@@ -398,8 +398,8 @@ what are ya waiting for?</string>
                                     <action selector="pressedButton:" destination="ifO-MJ-TVG" eventType="touchUpInside" id="WlE-0a-9KD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaa-VX-w0v">
-                                <rect key="frame" x="70" y="491" width="245" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaa-VX-w0v">
+                                <rect key="frame" x="70" y="491" width="245" height="100"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -419,10 +419,10 @@ what are ya waiting for?</string>
             </objects>
             <point key="canvasLocation" x="2887.5" y="371.5"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation-->
         <scene sceneID="XgM-Mk-W5Y">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kVF-KP-YLT" sceneMemberID="viewController">
+                <navigationController title="Navigation" automaticallyAdjustsScrollViewInsets="NO" id="kVF-KP-YLT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QbE-8v-RMg">

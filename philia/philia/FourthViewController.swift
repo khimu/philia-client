@@ -21,10 +21,10 @@ class FourthViewController: UIViewController {
     
 
     @IBOutlet var curiousButton: UIButton!
-    
     @IBOutlet var hangoutButton: UIButton!
-    @IBOutlet var debugLabel: UILabel!
     @IBOutlet var marriageButton: UIButton!
+    
+    @IBOutlet var debugLabel: UILabel!
 
     // turn this into a model object
     var name:String = ""
@@ -50,7 +50,7 @@ class FourthViewController: UIViewController {
         // ---- OR ----
         
         // If you want to present the new ViewController then use this
-        self.presentViewController(fifthViewController, animated:true, completion:nil)
+        self.navigationController?.pushViewController(fifthViewController, animated: true)
         
     }
     
@@ -74,7 +74,7 @@ class FourthViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        navigationItem.title = "fourthViewController"
+        navigationItem.title = "Intention"
     }
     
 }

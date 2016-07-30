@@ -29,11 +29,7 @@ class ThirdViewController: UIViewController {
         let answer: Int = Int(sender.tag)
         
         userGenderPreference = answer | userGenderPreference
-        
-        debugLabel.text = "\(userGenderPreference) and \(userInterest) for \(name)"
-        
-        
-        
+
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
         let fourthViewController = storyBoard.instantiateViewControllerWithIdentifier("fourthViewController") as! FourthViewController
@@ -45,7 +41,7 @@ class ThirdViewController: UIViewController {
         // ---- OR ----
         
         // If you want to present the new ViewController then use this
-        self.presentViewController(fourthViewController, animated:true, completion:nil)
+        self.navigationController?.pushViewController(fourthViewController, animated: true)
     }
     
     override func viewDidLoad() {
@@ -53,9 +49,17 @@ class ThirdViewController: UIViewController {
         self.womenButton.layer.cornerRadius = 10
         self.menButton.layer.cornerRadius = 10
         self.bothButton.layer.cornerRadius = 10
+        
+        
+        debugLabel.text = "\(userGenderPreference) and \(userInterest) for \(name)"
+
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        navigationItem.title = "Preference"
     }
 }

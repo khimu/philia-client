@@ -56,7 +56,8 @@ class SecondViewController: UIViewController {
             // ---- OR ----
             
             // If you want to present the new ViewController then use this
-            self.presentViewController(thirdViewController, animated:true, completion:nil)
+            //self.presentViewController(thirdViewController, //animated:true, completion:nil)
+            self.navigationController?.pushViewController(thirdViewController, animated: true)
         }
     }
     
@@ -93,6 +94,6 @@ class SecondViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        navigationItem.title = "viewController"
+        navigationItem.title = "Interest"
     }
 }
