@@ -8,6 +8,10 @@
 
 import UIKit
 
+/**
+ * The user's Interest bit value is stored in the button tags
+ * attribute
+ */
 
 class ViewController: UIViewController {
     
@@ -37,7 +41,6 @@ class ViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
             let secondViewController = segue.destinationViewController as! SecondViewController
             secondViewController.name = textField.text!
-            print(secondViewController.name)
     }
 
 

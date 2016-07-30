@@ -34,8 +34,6 @@ class SecondViewController: UIViewController {
     @IBOutlet var foodButton: UIButton!
     @IBOutlet var booksButton: UIButton!
     @IBOutlet var artistryButton: UIButton!
-
-    @IBOutlet var answerLabel: UILabel!
     
     @IBAction func buttonPressed(sender: UIButton) {
         countSelects += 1
@@ -47,7 +45,18 @@ class SecondViewController: UIViewController {
         sender.backgroundColor = UIColor.redColor()
         
         if(countSelects == 3) {
-            answerLabel.text = "Answer \(userInterest)"
+
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            
+            let thirdViewController = storyBoard.instantiateViewControllerWithIdentifier("thirdViewController") as! ThirdViewController
+            
+            thirdViewController.userInterest = userInterest
+            thirdViewController.name = name
+            
+            // ---- OR ----
+            
+            // If you want to present the new ViewController then use this
+            self.presentViewController(thirdViewController, animated:true, completion:nil)
         }
     }
     
@@ -56,6 +65,25 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.natureButton.layer.cornerRadius = 10
+        self.cultureButton.layer.cornerRadius = 10
+        self.ambition.layer.cornerRadius = 10
+        self.careerButton.layer.cornerRadius = 10
+        self.travelButton.layer.cornerRadius = 10
+        self.educationButton.layer.cornerRadius = 10
+        self.fashionButton.layer.cornerRadius = 10
+        self.ethicsButton.layer.cornerRadius = 10
+        self.religionButton.layer.cornerRadius = 10
+        self.powerButton.layer.cornerRadius = 10
+        self.wealthButton.layer.cornerRadius = 10
+        self.driveButton.layer.cornerRadius = 10
+        self.beautyButton.layer.cornerRadius = 10
+        self.familyButton.layer.cornerRadius = 10
+        self.fitnessButton.layer.cornerRadius = 10
+        self.foodButton.layer.cornerRadius = 10
+        self.booksButton.layer.cornerRadius = 10
+        self.artistryButton.layer.cornerRadius = 10
+
         self.messageLabel.text = "Hi \(name)\n" + self.messageLabel.text!
     }
     
@@ -63,4 +91,5 @@ class SecondViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 }
