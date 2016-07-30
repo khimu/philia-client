@@ -10,6 +10,7 @@ import UIKit
 
 class FifthViewController: UIViewController {
     
+    
     // 1 = men, 2 = women, 3 = both
     let mapLabel1ToBitMapForGenderPreference: [Int: String] = [1: "Mr.", 2: "Mrs.", 4: "Mr or Mrs"]
     
@@ -32,6 +33,13 @@ class FifthViewController: UIViewController {
     
     @IBAction func pressedButton(sender: UIButton) {
         debugLabel.text = "do nothing for now \(userGenderPreference) and \(userIntensionPreference) and \(userInterest) for \(name)"
+        
+            let json = [ "interest": userInterest, "genderInterest": userGenderPreference, "datingIntension": userIntensionPreference, "city": "los angeles", "state": "california", "zipcode": "90036", "country": "US", "firstName": name, "lastName": "ung", "birthdate": "04/06/1979", "age": "37" ]
+        
+        //UIDevice.currentDevice().identifierForVendor!.UUIDString
+        
+
+        HttpHelper.httpHelper.sendProfile(json);
     }
     
     override func viewDidLoad() {
@@ -46,5 +54,11 @@ class FifthViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        navigationItem.title = "fifthViewController"
+
+    }
+    
     
 }

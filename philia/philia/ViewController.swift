@@ -41,8 +41,8 @@ class ViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
             let secondViewController = segue.destinationViewController as! SecondViewController
             secondViewController.name = textField.text!
+        navigationItem.title = "Main"
     }
-
 
 }
 

@@ -73,4 +73,8 @@ class FourthViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        navigationItem.title = "fourthViewController"
+    }
+    
 }
