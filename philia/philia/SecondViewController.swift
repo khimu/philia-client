@@ -11,6 +11,8 @@ import UIKit
 class SecondViewController: UIViewController {
 
     var name:String = ""
+    var birthday:String = ""
+    var location:String = ""
     
     var userInterest: Int = 0
     
@@ -86,6 +88,11 @@ class SecondViewController: UIViewController {
         self.artistryButton.layer.cornerRadius = 10
 
         self.messageLabel.text = "Hi \(name)\n" + self.messageLabel.text!
+        
+        UIColor.whiteColor().colorWithAlphaComponent(0).CGColor
+        
+        //view?.backgroundColor = UIColor(white: 1, alpha: 0.5)
+        view.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.5)
     }
     
     override func didReceiveMemoryWarning() {

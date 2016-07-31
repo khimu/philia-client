@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kVF-KP-YLT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dqz-UW-oBt">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -8,61 +8,104 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="viewController" id="BYZ-38-t0r" customClass="ViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="338" height="332"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="us2-zd-cF8">
-                                <rect key="frame" x="145" y="182" width="85" height="30"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bbn-8a-vrI"/>
-                                    <segue destination="YQ4-et-RQG" kind="show" id="lv7-6z-hSy"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mvw-QV-zMR">
-                                <rect key="frame" x="116" y="144" width="142" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mvw-QV-zMR">
+                                <rect key="frame" x="106" y="162" width="143" height="56"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dqi-iq-99L">
-                                <rect key="frame" x="67" y="81" width="240" height="55"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Hi, we're Philia!
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dqi-iq-99L">
+                                <rect key="frame" x="57" y="47" width="240" height="85"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Hi, we're Philia!
 What's your name?</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="24" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="1nr-G6-dRF"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="300" height="300"/>
                     <connections>
                         <outlet property="anotherTextLabel" destination="dqi-iq-99L" id="2pp-ME-CcJ"/>
                         <outlet property="backgroundImageView" destination="8bC-Xf-vdC" id="3Es-15-hty"/>
                         <outlet property="textField" destination="Mvw-QV-zMR" id="awa-wU-iml"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1251.5" y="371.5"/>
+            <point key="canvasLocation" x="739" y="161"/>
+        </scene>
+        <!--Birthday Picker Controller-->
+        <scene sceneID="mBM-vw-cAI">
+            <objects>
+                <viewController storyboardIdentifier="birthdayPickerController" id="pHY-cb-0dA" customClass="BirthdayPickerController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hie-dy-iCt"/>
+                        <viewControllerLayoutGuide type="bottom" id="N5x-pa-UyT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WiZ-1W-c0x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgr-MN-oEr">
+                                <rect key="frame" x="248" y="306" width="101" height="41"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="pHY-cb-0dA" eventType="touchUpInside" id="vpQ-2N-t9J"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="IJ0-ob-Uqh">
+                                <rect key="frame" x="17" y="62" width="338" height="216"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <date key="date" timeIntervalSinceReferenceDate="491642398.83698201">
+                                    <!--2016-07-31 07:19:58 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="375"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="375"/>
+                    <connections>
+                        <outlet property="birthdayDoneButton" destination="hgr-MN-oEr" id="rer-pO-5Nv"/>
+                        <outlet property="birthdayPicker" destination="IJ0-ob-Uqh" id="nUv-Zi-mjX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t23-bV-QfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757.5" y="559.5"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="F7N-Dz-IM3">
             <objects>
-                <viewController storyboardIdentifier="secondViewController" id="YQ4-et-RQG" customClass="SecondViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secondViewController" modalPresentationStyle="overCurrentContext" id="YQ4-et-RQG" customClass="SecondViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aiv-9a-lMR"/>
                         <viewControllerLayoutGuide type="bottom" id="Wve-Yr-KZU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RRh-Z1-cX5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soP-ZL-Axy">
@@ -206,7 +249,7 @@ Pick your 3 fav things about life:</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="300"/>
                     <connections>
                         <outlet property="ambition" destination="caM-SQ-ScV" id="s7e-px-2i8"/>
                         <outlet property="artistryButton" destination="e8j-xV-ASi" id="oRH-1L-1Rn"/>
@@ -431,12 +474,47 @@ what are ya waiting for?</string>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tDi-63-hkx"/>
+                        <segue destination="Dqz-UW-oBt" kind="show" id="dFk-Od-lXI"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPa-ye-1AA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="837.5" y="371.5"/>
+            <point key="canvasLocation" x="-298.5" y="336.5"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="kZA-zp-XpJ">
+            <objects>
+                <viewController storyboardIdentifier="mainViewController" id="Dqz-UW-oBt" customClass="MainViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5bC-nR-NMi"/>
+                        <viewControllerLayoutGuide type="bottom" id="8N9-8P-Z7P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V85-XL-lKL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eVd-c3-llu">
+                                <rect key="frame" x="133" y="524" width="109" height="87"/>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tak-gr-vyz">
+                                <rect key="frame" x="20" y="149" width="338" height="332"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="embed" id="I2h-x1-Wfl"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="logoImage" destination="eVd-c3-llu" id="Lbj-qL-jeX"/>
+                        <outlet property="overlayUIView" destination="tak-gr-vyz" id="3l0-n4-WMU"/>
+                        <outlet property="overlayView" destination="tak-gr-vyz" id="eQj-mC-VlE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z0L-4j-UhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="349.5" y="328.5"/>
         </scene>
     </scenes>
 </document>

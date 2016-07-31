@@ -10,12 +10,91 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "philia/ViewController.swift"
-            timestampString = "491556787.52744"
+            timestampString = "491646259.917177"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "prepareForSegue(_:sender:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "philia.ViewController.anotherTextLabel.setter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextView&gt;"
+                  moduleName = "philia"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/khimung/Documents/philia-client/philia/philia/ViewController.swift"
+                  timestampString = "491643001.385331"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "philia.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; philia.ViewController"
+                  moduleName = "philia"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/khimung/Documents/philia-client/philia/philia/ViewController.swift"
+                  timestampString = "491643001.385471"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "philia.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;philia.ViewController&gt;"
+                  moduleName = "philia"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/khimung/Documents/philia-client/philia/philia/ViewController.swift"
+                  timestampString = "491643001.3856"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "51">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "philia/ViewController.swift"
+            timestampString = "491679194.687271"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "onEnter(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "philia/ViewController.swift"
+            timestampString = "491646259.917177"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "onEnter(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
