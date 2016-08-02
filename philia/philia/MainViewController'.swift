@@ -9,22 +9,49 @@
 import Foundation
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, DelegateUIViewController {
     
     @IBOutlet var overlayView: UIView!
     
     @IBOutlet var logoImage: UIImageView!
     
-    @IBOutlet var overlayUIView: UIView!
+    private var controllers = [UIViewController]()
     
     private var embeddedViewController: ViewController!
-    private var birthdayPickerController: BirthdayPickerController!
+    
+    private var activeViewController: UIViewController? {
+        didSet {
+            removeInactiveViewController(oldValue)
+            updateActiveViewController()
+        }
+    }
+    
+    private func updateActiveViewController() {
+        if let activeVC = activeViewController {
+            // call before adding child view controller's view as subview
+            addChildViewController(activeVC)
+            
+            activeVC.view.frame = overlayView.bounds
+            overlayView.addSubview(activeVC.view)
+            
+            // call before adding child view controller's view as subview
+            activeVC.didMoveToParentViewController(self)
+        }
+    }
+    
+    private func removeInactiveViewController(inactiveViewController: UIViewController?) {
+        if let inActiveVC = inactiveViewController {
+            // call before removing child view controller's view from hierarchy
+            inActiveVC.willMoveToParentViewController(nil)
+            
+            inActiveVC.view.removeFromSuperview()
+            
+            // call after removing child view controller's view from hierarchy
+            inActiveVC.removeFromParentViewController()
+        }
+    }
     
     required init(coder aDecoder: NSCoder) {
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        
-        self.birthdayPickerController = storyBoard.instantiateViewControllerWithIdentifier("birthdayPickerController") as! BirthdayPickerController
-
         super.init(coder: aDecoder)!
     }
     
@@ -43,31 +70,19 @@ class MainViewController: UIViewController {
         
         self.embeddedViewController = storyBoard.instantiateViewControllerWithIdentifier("viewController") as! ViewController
         
+        activeViewController = self.embeddedViewController
         
-        self.embeddedViewController.setOverlayUIView(overlayUIView)
+        self.embeddedViewController.delegate = self;
     }
-    
- 
-    
-    let viewControllerIdentifiers = ["viewController", "birthdayPickerController"]  // storyboard identifiers for the child view controllers
     
     /*
-    @IBAction func didChangeValue(sender: UISegmentedControl) {
-        
-        let newController = (storyboard?.instantiateViewControllerWithIdentifier(viewControllerIdentifiers[sender.selectedSegmentIndex]))! as UIViewController
-        
-        let oldController = childViewControllers.last! as UIViewController
-        
-        oldController.willMoveToParentViewController(nil)
-        addChildViewController(newController)
-        newController.view.frame = oldController.view.frame
-        
-        transitionFromViewController(oldController, toViewController: newController, duration: 0.25, options: .TransitionCrossDissolve, animations:{ () -> Void in
-            // nothing needed here
-            }, completion: { (finished) -> Void in
-                oldController.removeFromParentViewController()
-                newController.didMoveToParentViewController(self)
-        })
+     * Call this from embedded IUViewController when ready to seque to next controller
+     */
+    func onUserAction(nextController: UIViewController) {
+        activeViewController = nextController
     }
- */
+}
+
+protocol DelegateUIViewController{
+    func onUserAction(nextController: UIViewController)
 }

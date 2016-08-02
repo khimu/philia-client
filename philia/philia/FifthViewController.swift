@@ -10,7 +10,7 @@ import UIKit
 
 class FifthViewController: UIViewController {
     
-    
+
     // 1 = men, 2 = women, 3 = both
     let mapLabel1ToBitMapForGenderPreference: [Int: String] = [1: "Mr.", 2: "Mrs.", 4: "Mr or Mrs"]
     
@@ -23,9 +23,12 @@ class FifthViewController: UIViewController {
     @IBOutlet var subMessageLabel: UILabel!
     
     var name:String = ""
+    var birthday:String = ""
+    var location:String = ""
     var userInterest: Int = 0
     var userGenderPreference: Int = 0
     var userIntensionPreference: Int = 0
+    
 
     @IBOutlet var debugLabel: UILabel!
 
@@ -34,7 +37,24 @@ class FifthViewController: UIViewController {
     @IBAction func pressedButton(sender: UIButton) {
         debugLabel.text = "do nothing for now \(userGenderPreference) and \(userIntensionPreference) and \(userInterest) for \(name)"
         
-            let json = [ "interest": userInterest, "genderInterest": userGenderPreference, "datingIntension": userIntensionPreference, "city": "los angeles", "state": "california", "zipcode": "90036", "country": "US", "firstName": name, "lastName": "ung", "birthdate": "04/06/1979", "age": "37" ]
+        // today
+        let date = NSDate()
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+
+        let calendar = NSCalendar.currentCalendar()
+        
+        let ageComponents = calendar.components(.Year,
+                                                fromDate: dateFormatter.dateFromString(birthday)!,
+                                                toDate: date,
+                                                options: []).year
+        
+        var fullNameArr = name.split(regex: "[ ]+")
+        let lastName = fullNameArr.count > 1 ? fullNameArr[1] : ""
+        
+        
+        let json = [ "interest": userInterest, "genderInterest": userGenderPreference, "datingIntension": userIntensionPreference, "city": location, "state": "?", "zipcode": "?", "country": "US", "firstName": fullNameArr[0], "lastName": lastName, "birthdate": birthday, "age": ageComponents ]
         
         //UIDevice.currentDevice().identifierForVendor!.UUIDString
         
@@ -49,6 +69,9 @@ class FifthViewController: UIViewController {
         mainMessageLabel.text = "Yah! All done, \(name)\nNext up... here are\nsome potential \(mapLabel1ToBitMapForGenderPreference[userGenderPreference]!) \(name)"
         
         subMessageLabel.text = "You'll be able to see what your\npotential \(mapLabel1ToBitMapForGenderPreference[userGenderPreference]!) looks like once\nyour values match!  Your profile\npictures will auto-unlock.\nSomeone out there has the key,\n what are ya waiting for?"
+        
+        UIColor.blackColor().colorWithAlphaComponent(0).CGColor
+        view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.3)
     }
     
     override func didReceiveMemoryWarning() {
@@ -59,6 +82,23 @@ class FifthViewController: UIViewController {
         navigationItem.title = "Ready To Match"
 
     }
+
+}
+
+extension String {
     
-    
+    func split(regex pattern: String) -> [String] {
+        
+        guard let re = try? NSRegularExpression(pattern: pattern, options: [])
+            else { return [] }
+        
+        let nsString = self as NSString // needed for range compatibility
+        let stop = "<SomeStringThatYouDoNotExpectToOccurInSelf>"
+        let modifiedString = re.stringByReplacingMatchesInString(
+            self,
+            options: [],
+            range: NSRange(location: 0, length: nsString.length),
+            withTemplate: stop)
+        return modifiedString.componentsSeparatedByString(stop)
+    }
 }

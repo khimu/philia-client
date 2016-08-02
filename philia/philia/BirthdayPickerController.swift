@@ -12,13 +12,30 @@ import UIKit
 class BirthdayPickerController: UIViewController {
     
     var name:String = ""
+    var birthday:String = ""
     
     @IBOutlet var birthdayPicker: UIDatePicker!
     @IBOutlet var birthdayDoneButton: UIButton!
     
+    /*
+     * Allows access to parent method
+     */
+    var delegate: DelegateUIViewController?
+    
     
     @IBAction func buttonPressed(sender: UIButton) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
+        let locationController = storyBoard.instantiateViewControllerWithIdentifier("locationController") as! LocationController
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        
+        locationController.name = name
+        locationController.birthday = dateFormatter.stringFromDate(birthdayPicker.date)
+        locationController.delegate = self.delegate
+        
+        self.delegate!.onUserAction(locationController)
     }
     
     override func viewDidLoad() {
@@ -31,8 +48,6 @@ class BirthdayPickerController: UIViewController {
         birthdayPicker.setValue(UIColor.whiteColor(), forKeyPath: "textColor")
         
         self.birthdayDoneButton.layer.cornerRadius = 10
-        birthdayDoneButton.backgroundColor = UIColor.whiteColor()
-        
     }
     
     override func didReceiveMemoryWarning() {

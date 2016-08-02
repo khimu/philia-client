@@ -8,21 +8,20 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="viewController" id="BYZ-38-t0r" customClass="ViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="338" height="332"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mvw-QV-zMR">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mvw-QV-zMR">
                                 <rect key="frame" x="106" y="162" width="143" height="56"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dqi-iq-99L">
@@ -42,18 +41,54 @@ What's your name?</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="1nr-G6-dRF"/>
                     <value key="contentSizeForViewInPopover" type="size" width="300" height="300"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="375"/>
                     <connections>
                         <outlet property="anotherTextLabel" destination="dqi-iq-99L" id="2pp-ME-CcJ"/>
                         <outlet property="backgroundImageView" destination="8bC-Xf-vdC" id="3Es-15-hty"/>
                         <outlet property="textField" destination="Mvw-QV-zMR" id="awa-wU-iml"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="739" y="161"/>
+            <point key="canvasLocation" x="776.5" y="142.5"/>
+        </scene>
+        <!--Location Controller-->
+        <scene sceneID="kdw-DM-hQZ">
+            <objects>
+                <viewController storyboardIdentifier="locationController" id="dJg-Ox-YtA" customClass="LocationController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WEi-rl-Rgr"/>
+                        <viewControllerLayoutGuide type="bottom" id="D54-zB-kHK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4at-FR-nq1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What city do you live?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sHP-1M-SHK">
+                                <rect key="frame" x="70" y="114" width="235" height="30"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="375"/>
+                    <connections>
+                        <outlet property="textField" destination="sHP-1M-SHK" id="vUI-ym-lzf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mTm-jO-y5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173.5" y="142.5"/>
         </scene>
         <!--Birthday Picker Controller-->
         <scene sceneID="mBM-vw-cAI">
@@ -69,20 +104,25 @@ What's your name?</string>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgr-MN-oEr">
                                 <rect key="frame" x="248" y="306" width="101" height="41"/>
-                                <state key="normal" title="Done"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="pHY-cb-0dA" eventType="touchUpInside" id="vpQ-2N-t9J"/>
+                                    <action selector="buttonPressed:" destination="pHY-cb-0dA" eventType="touchUpInside" id="M69-Mq-T5u"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="IJ0-ob-Uqh">
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJ0-ob-Uqh">
                                 <rect key="frame" x="17" y="62" width="338" height="216"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <date key="date" timeIntervalSinceReferenceDate="491642398.83698201">
-                                    <!--2016-07-31 07:19:58 +0000-->
+                                <date key="date" timeIntervalSinceReferenceDate="-189358800.16301727">
+                                    <!--1995-01-01 08:19:59 +0000-->
                                 </date>
                             </datePicker>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="375" height="375"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -94,162 +134,201 @@ What's your name?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t23-bV-QfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="757.5" y="559.5"/>
+            <point key="canvasLocation" x="776.5" y="569.5"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="F7N-Dz-IM3">
             <objects>
-                <viewController storyboardIdentifier="secondViewController" modalPresentationStyle="overCurrentContext" id="YQ4-et-RQG" customClass="SecondViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secondViewController" modalPresentationStyle="currentContext" id="YQ4-et-RQG" customClass="SecondViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aiv-9a-lMR"/>
                         <viewControllerLayoutGuide type="bottom" id="Wve-Yr-KZU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RRh-Z1-cX5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soP-ZL-Axy">
-                                <rect key="frame" x="72" y="185" width="70" height="40"/>
+                                <rect key="frame" x="50" y="134" width="70" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label="nature"/>
-                                <state key="normal" title="nature"/>
+                                <state key="normal" title="nature">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="L0S-2C-3bQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEP-vT-UoZ">
-                                <rect key="frame" x="152" y="185" width="70" height="40"/>
-                                <state key="normal" title="culture"/>
+                                <rect key="frame" x="130" y="134" width="70" height="30"/>
+                                <state key="normal" title="culture">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="6Y5-Nw-2Ke"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caM-SQ-ScV">
-                                <rect key="frame" x="232" y="185" width="70" height="40"/>
-                                <state key="normal" title="ambition"/>
+                                <rect key="frame" x="210" y="134" width="70" height="30"/>
+                                <state key="normal" title="ambition">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="UZd-Ql-LSh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwD-s3-lUO">
-                                <rect key="frame" x="72" y="233" width="70" height="40"/>
-                                <state key="normal" title="career"/>
+                                <rect key="frame" x="50" y="169" width="70" height="30"/>
+                                <state key="normal" title="career">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="ZMe-Kc-ffb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edU-dM-dat">
-                                <rect key="frame" x="152" y="233" width="70" height="40"/>
-                                <state key="normal" title="travel"/>
+                                <rect key="frame" x="130" y="169" width="70" height="30"/>
+                                <state key="normal" title="travel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="S3I-Af-3ha"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="32" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K5-Xd-ys6">
-                                <rect key="frame" x="232" y="233" width="70" height="40"/>
-                                <state key="normal" title="education"/>
+                                <rect key="frame" x="210" y="169" width="70" height="30"/>
+                                <state key="normal" title="education">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="jjF-q2-Pan"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="64" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sL3-CC-1bk">
-                                <rect key="frame" x="72" y="287" width="70" height="40"/>
-                                <state key="normal" title="fashion"/>
+                                <rect key="frame" x="50" y="204" width="70" height="30"/>
+                                <state key="normal" title="fashion">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="818-5m-6BE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="128" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecw-vS-trU">
-                                <rect key="frame" x="152" y="287" width="70" height="40"/>
-                                <state key="normal" title="ethics"/>
+                                <rect key="frame" x="130" y="204" width="70" height="30"/>
+                                <state key="normal" title="ethics">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="bmf-AX-V1A"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="256" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ER3-WO-zdf">
-                                <rect key="frame" x="232" y="287" width="70" height="40"/>
-                                <state key="normal" title="religion"/>
+                                <rect key="frame" x="210" y="204" width="70" height="30"/>
+                                <state key="normal" title="religion">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="zy3-gz-ShM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="512" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuT-AD-5kx">
-                                <rect key="frame" x="72" y="340" width="70" height="40"/>
-                                <state key="normal" title="power"/>
+                                <rect key="frame" x="50" y="239" width="70" height="30"/>
+                                <state key="normal" title="power">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="JLm-MB-DwB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1024" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tb2-s6-fKh">
-                                <rect key="frame" x="152" y="340" width="70" height="40"/>
-                                <state key="normal" title="wealth"/>
+                                <rect key="frame" x="130" y="239" width="70" height="30"/>
+                                <state key="normal" title="wealth">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="MY5-dN-Ros"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2048" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CU-ef-vdR">
-                                <rect key="frame" x="232" y="340" width="70" height="40"/>
-                                <state key="normal" title="drive"/>
+                                <rect key="frame" x="210" y="239" width="70" height="30"/>
+                                <state key="normal" title="drive">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="GFl-GB-4pz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4096" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDz-ql-it3">
-                                <rect key="frame" x="72" y="393" width="70" height="40"/>
-                                <state key="normal" title="beauty"/>
+                                <rect key="frame" x="50" y="274" width="70" height="30"/>
+                                <state key="normal" title="beauty">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="lOs-ds-s9j"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8192" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyR-qS-7xz">
-                                <rect key="frame" x="152" y="393" width="70" height="40"/>
+                                <rect key="frame" x="130" y="274" width="70" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="yWY-Mg-8tp"/>
                                 </constraints>
-                                <state key="normal" title="family"/>
+                                <state key="normal" title="family">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="v8H-25-FsX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="16384" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uty-gw-dzY">
-                                <rect key="frame" x="232" y="393" width="70" height="40"/>
-                                <state key="normal" title="fitness"/>
+                                <rect key="frame" x="210" y="274" width="70" height="30"/>
+                                <state key="normal" title="fitness">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="Ngf-en-j3E"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRk-ZJ-N4P">
-                                <rect key="frame" x="67" y="64" width="240" height="107"/>
+                                <rect key="frame" x="0.0" y="20" width="335" height="107"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Awesome to meet you!
 Pick your 3 fav things about life:</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="32768" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMI-G0-u31">
-                                <rect key="frame" x="72" y="441" width="70" height="40"/>
-                                <state key="normal" title="food"/>
+                                <rect key="frame" x="50" y="309" width="70" height="30"/>
+                                <state key="normal" title="food">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="jop-yz-Pxi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="65536" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVG-sR-pr0">
-                                <rect key="frame" x="152" y="441" width="70" height="40"/>
-                                <state key="normal" title="books"/>
+                                <rect key="frame" x="130" y="309" width="70" height="30"/>
+                                <state key="normal" title="books">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="f1e-Mb-UBt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="131072" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8j-xV-ASi">
-                                <rect key="frame" x="232" y="441" width="70" height="40"/>
-                                <state key="normal" title="artistry"/>
+                                <rect key="frame" x="210" y="309" width="70" height="30"/>
+                                <state key="normal" title="artistry">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="YQ4-et-RQG" eventType="touchUpInside" id="RAv-q3-Qx1"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <value key="contentSizeForViewInPopover" type="size" width="375" height="300"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="375"/>
                     <connections>
                         <outlet property="ambition" destination="caM-SQ-ScV" id="s7e-px-2i8"/>
                         <outlet property="artistryButton" destination="e8j-xV-ASi" id="oRH-1L-1Rn"/>
@@ -274,7 +353,7 @@ Pick your 3 fav things about life:</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jma-oe-lwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1663.5" y="371.5"/>
+            <point key="canvasLocation" x="1173.5" y="569.5"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="A4u-IP-xer">
@@ -285,46 +364,62 @@ Pick your 3 fav things about life:</string>
                         <viewControllerLayoutGuide type="bottom" id="gOY-CT-LhQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tds-ZA-9XH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="So tell us what you're looking for:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjw-Tq-9hu">
-                                <rect key="frame" x="60" y="90" width="265" height="69"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="So tell us what you're looking for:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjw-Tq-9hu">
+                                <rect key="frame" x="60" y="38" width="265" height="69"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zt0-tS-ORk">
-                                <rect key="frame" x="60" y="202" width="70" height="30"/>
-                                <state key="normal" title="women"/>
+                                <rect key="frame" x="60" y="139" width="70" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="women">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedButton:" destination="Xl6-zn-wPt" eventType="touchUpInside" id="yRj-V1-fdR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ca6-C3-4oJ">
-                                <rect key="frame" x="155" y="202" width="70" height="30"/>
-                                <state key="normal" title="men"/>
+                                <rect key="frame" x="155" y="139" width="70" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="men">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedButton:" destination="Xl6-zn-wPt" eventType="touchUpInside" id="gFg-X6-Zw8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQc-9d-H2v">
-                                <rect key="frame" x="255" y="202" width="70" height="30"/>
-                                <state key="normal" title="both"/>
+                                <rect key="frame" x="255" y="139" width="70" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="both">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="pressedButton:" destination="Xl6-zn-wPt" eventType="touchUpInside" id="WO7-ph-lcy"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oC2-Ag-gRW">
-                                <rect key="frame" x="69" y="301" width="198" height="120"/>
+                                <rect key="frame" x="73" y="211" width="198" height="120"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="375"/>
                     <connections>
                         <outlet property="bothButton" destination="SQc-9d-H2v" id="9xm-2h-gFs"/>
                         <outlet property="debugLabel" destination="oC2-Ag-gRW" id="xov-Qx-4cC"/>
@@ -334,7 +429,7 @@ Pick your 3 fav things about life:</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6d-HF-qm0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2064.5" y="371.5"/>
+            <point key="canvasLocation" x="1587.5" y="142.5"/>
         </scene>
         <!--Fourth View Controller-->
         <scene sceneID="Ecd-rD-V20">
@@ -345,49 +440,55 @@ Pick your 3 fav things about life:</string>
                         <viewControllerLayoutGuide type="bottom" id="zKa-87-ipr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gaq-8V-Lc2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhz-uf-kfT">
-                                <rect key="frame" x="39" y="56" width="297" height="106"/>
+                                <rect key="frame" x="39" y="28" width="297" height="106"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Ok awesome
 and once you find your 
 ? you'd like to:</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2E-3f-SJE">
-                                <rect key="frame" x="20" y="197" width="335" height="30"/>
+                                <rect key="frame" x="20" y="156" width="335" height="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="uhm, well, I'm just bored"/>
                                 <connections>
                                     <action selector="pressedButton:" destination="4rM-Yk-KBB" eventType="touchUpInside" id="zjo-mW-6qo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6C-9u-Dtb">
-                                <rect key="frame" x="20" y="249" width="335" height="30"/>
+                                <rect key="frame" x="20" y="208" width="335" height="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="hang out, drink, and stuff"/>
                                 <connections>
                                     <action selector="pressedButton:" destination="4rM-Yk-KBB" eventType="touchUpInside" id="z2I-Gx-hbY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joa-Zs-Eu3">
-                                <rect key="frame" x="20" y="303" width="335" height="30"/>
+                                <rect key="frame" x="20" y="262" width="335" height="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="if this works, she'll be Mrs. Jake"/>
                                 <connections>
                                     <action selector="pressedButton:" destination="4rM-Yk-KBB" eventType="touchUpInside" id="a2l-HQ-5Bo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7X-sZ-bPA">
-                                <rect key="frame" x="61" y="439" width="253" height="107"/>
+                                <rect key="frame" x="61" y="305" width="253" height="107"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="375"/>
                     <connections>
                         <outlet property="curiousButton" destination="v2E-3f-SJE" id="TVJ-33-NqB"/>
                         <outlet property="debugLabel" destination="t7X-sZ-bPA" id="a0c-qJ-yAU"/>
@@ -398,7 +499,7 @@ and once you find your
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qEC-8a-3Pq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2476.5" y="371.5"/>
+            <point key="canvasLocation" x="1582.5" y="563.5"/>
         </scene>
         <!--Fifth View Controller-->
         <scene sceneID="ds7-7s-aAg">
@@ -409,20 +510,20 @@ and once you find your
                         <viewControllerLayoutGuide type="bottom" id="FXp-PT-QlJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OyR-No-ph5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIQ-3J-0ah">
-                                <rect key="frame" x="48" y="43" width="278" height="90"/>
+                                <rect key="frame" x="48" y="28" width="278" height="90"/>
                                 <string key="text">Yah! All done, Jake!
 Next up... here are 
 some potential Mrs. Jakes!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8B-MA-XxJ">
-                                <rect key="frame" x="70" y="176" width="234" height="141"/>
+                                <rect key="frame" x="70" y="126" width="234" height="141"/>
                                 <string key="text">You'll be able to see what your 
 potential Mrs. looks like once 
 your values match!  Your profile 
@@ -430,11 +531,11 @@ pictures will auto-unlock.
 Somone out there has the key, 
 what are ya waiting for?</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHl-4X-1dl">
-                                <rect key="frame" x="70" y="391" width="245" height="77"/>
+                                <rect key="frame" x="65" y="278" width="245" height="77"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="go meet my matches!"/>
                                 <connections>
@@ -442,15 +543,17 @@ what are ya waiting for?</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaa-VX-w0v">
-                                <rect key="frame" x="70" y="491" width="245" height="100"/>
+                                <rect key="frame" x="70" y="71" width="245" height="100"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="375"/>
                     <connections>
                         <outlet property="debugLabel" destination="aaa-VX-w0v" id="edz-Kt-d9t"/>
                         <outlet property="mainMessageLabel" destination="vIQ-3J-0ah" id="51y-8j-5ss"/>
@@ -460,7 +563,7 @@ what are ya waiting for?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vro-oK-feH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2887.5" y="371.5"/>
+            <point key="canvasLocation" x="2000.5" y="142.5"/>
         </scene>
         <!--Navigation-->
         <scene sceneID="XgM-Mk-W5Y">
@@ -498,9 +601,6 @@ what are ya waiting for?</string>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tak-gr-vyz">
                                 <rect key="frame" x="20" y="149" width="338" height="332"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="embed" id="I2h-x1-Wfl"/>
-                                </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -508,7 +608,6 @@ what are ya waiting for?</string>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="logoImage" destination="eVd-c3-llu" id="Lbj-qL-jeX"/>
-                        <outlet property="overlayUIView" destination="tak-gr-vyz" id="3l0-n4-WMU"/>
                         <outlet property="overlayView" destination="tak-gr-vyz" id="eQj-mC-VlE"/>
                     </connections>
                 </viewController>

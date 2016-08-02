@@ -13,6 +13,8 @@ import UIKit
  */
 class ThirdViewController: UIViewController {
     
+    var delegate: DelegateUIViewController?
+    
     @IBOutlet var womenButton: UIButton!
     @IBOutlet var menButton: UIButton!
     @IBOutlet var bothButton: UIButton!
@@ -20,6 +22,8 @@ class ThirdViewController: UIViewController {
     @IBOutlet var debugLabel: UILabel!
     
     var name:String = ""
+    var birthday:String = ""
+    var location:String = ""
     
     var userInterest: Int = 0
     
@@ -37,11 +41,12 @@ class ThirdViewController: UIViewController {
         fourthViewController.userInterest = userInterest
         fourthViewController.name = name
         fourthViewController.userGenderPreference = userGenderPreference
+        fourthViewController.birthday = birthday
+        fourthViewController.location = location
         
-        // ---- OR ----
+        fourthViewController.delegate = self.delegate
         
-        // If you want to present the new ViewController then use this
-        self.navigationController?.pushViewController(fourthViewController, animated: true)
+        self.delegate!.onUserAction(fourthViewController)
     }
     
     override func viewDidLoad() {
@@ -53,6 +58,9 @@ class ThirdViewController: UIViewController {
         
         debugLabel.text = "\(userGenderPreference) and \(userInterest) for \(name)"
 
+        
+        UIColor.blackColor().colorWithAlphaComponent(0).CGColor
+        view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.3)
     }
     
     override func didReceiveMemoryWarning() {

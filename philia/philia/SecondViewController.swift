@@ -14,6 +14,8 @@ class SecondViewController: UIViewController {
     var birthday:String = ""
     var location:String = ""
     
+    var delegate: DelegateUIViewController?
+    
     var userInterest: Int = 0
     
     var countSelects = 0
@@ -54,12 +56,13 @@ class SecondViewController: UIViewController {
             
             thirdViewController.userInterest = userInterest
             thirdViewController.name = name
+            thirdViewController.birthday = birthday
+            thirdViewController.location = location
             
-            // ---- OR ----
+            thirdViewController.delegate = self.delegate
             
-            // If you want to present the new ViewController then use this
-            //self.presentViewController(thirdViewController, //animated:true, completion:nil)
-            self.navigationController?.pushViewController(thirdViewController, animated: true)
+            self.delegate!.onUserAction(thirdViewController)
+            
         }
     }
     
@@ -89,10 +92,9 @@ class SecondViewController: UIViewController {
 
         self.messageLabel.text = "Hi \(name)\n" + self.messageLabel.text!
         
-        UIColor.whiteColor().colorWithAlphaComponent(0).CGColor
-        
-        //view?.backgroundColor = UIColor(white: 1, alpha: 0.5)
-        view.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.5)
+        UIColor.blackColor().colorWithAlphaComponent(0).CGColor
+        view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.3)
+
     }
     
     override func didReceiveMemoryWarning() {

@@ -9,6 +9,8 @@
 import UIKit
 
 class FourthViewController: UIViewController {
+    var delegate: DelegateUIViewController?
+    
     // 1 = men, 2 = women, 3 = both
     let mapLabel1ToBitMapForGenderPreference: [Int: String] = [1: "Mr.", 2: "Mrs.", 4: "Mr or Mrs"]
     
@@ -28,6 +30,8 @@ class FourthViewController: UIViewController {
 
     // turn this into a model object
     var name:String = ""
+    var birthday:String = ""
+    var location:String = ""
     var userInterest: Int = 0
     var userGenderPreference: Int = 0
     var userIntensionPreference: Int = 0
@@ -46,11 +50,10 @@ class FourthViewController: UIViewController {
         fifthViewController.name = name
         fifthViewController.userGenderPreference = userGenderPreference
         fifthViewController.userIntensionPreference = userIntensionPreference
+        fifthViewController.birthday = birthday
+        fifthViewController.location = location
         
-        // ---- OR ----
-        
-        // If you want to present the new ViewController then use this
-        self.navigationController?.pushViewController(fifthViewController, animated: true)
+        self.delegate!.onUserAction(fifthViewController)
         
     }
     
@@ -65,7 +68,10 @@ class FourthViewController: UIViewController {
         
         marriageButton.setTitle("if this works, \(mapLabel2ToBitMapForGenderPreference[userGenderPreference]!) be \(mapLabel1ToBitMapForGenderPreference[userGenderPreference]!) \(name)", forState: .Normal)
         
-        debugLabel.text = "\(userGenderPreference) and \(userIntensionPreference) and \(userInterest) for \(name)"        
+        debugLabel.text = "\(userGenderPreference) and \(userIntensionPreference) and \(userInterest) for \(name)"
+        
+        UIColor.blackColor().colorWithAlphaComponent(0).CGColor
+        view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.3)
         
     }
     
