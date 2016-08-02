@@ -50,8 +50,8 @@ class ViewController: UIViewController, UITextFieldDelegate{
         
         birthdayPickerController.name = textField.text!
         
-        overlayUIView.willRemoveSubview(self.view)
-        overlayUIView.addSubview(birthdayPickerController.view)
+        //overlayUIView.willRemoveSubview(self.view)
+        //overlayUIView.addSubview(birthdayPickerController.view)
         
         /*
         self.willMoveToParentViewController(nil)
