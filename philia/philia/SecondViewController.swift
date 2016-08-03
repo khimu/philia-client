@@ -40,9 +40,11 @@ class SecondViewController: UIViewController {
     @IBOutlet var artistryButton: UIButton!
     
     @IBAction func buttonPressed(sender: UIButton) {
-        countSelects += 1
-        
         let answer: Int = Int(sender.tag)
+        
+        if((answer & userInterest) == 0) {
+            countSelects += 1
+        }
         
         userInterest = answer | userInterest
         

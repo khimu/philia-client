@@ -37,6 +37,8 @@ class FourthViewController: UIViewController {
     var userIntensionPreference: Int = 0
     
     @IBAction func pressedButton(sender: UIButton) {
+        sender.backgroundColor = UIColor.redColor()
+        
         let answer: Int = Int(sender.tag)
         
         userIntensionPreference = answer | userIntensionPreference

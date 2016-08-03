@@ -35,6 +35,8 @@ class FifthViewController: UIViewController {
     @IBOutlet var meetMatchesButton: UIButton!
     
     @IBAction func pressedButton(sender: UIButton) {
+        sender.backgroundColor = UIColor.redColor()
+        
         debugLabel.text = "do nothing for now \(userGenderPreference) and \(userIntensionPreference) and \(userInterest) for \(name)"
         
         // today
@@ -60,6 +62,19 @@ class FifthViewController: UIViewController {
         
 
         HttpHelper.httpHelper.sendProfile(json);
+        
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let secondMainViewController = storyBoard.instantiateViewControllerWithIdentifier("secondMainViewController") as! SecondMainViewController
+        
+        secondMainViewController.userInterest = userInterest
+        secondMainViewController.name = name
+        secondMainViewController.birthday = birthday
+        secondMainViewController.location = location
+        secondMainViewController.userGenderPreference = userGenderPreference;
+        secondMainViewController.userIntensionPreference = userIntensionPreference
+
     }
     
     override func viewDidLoad() {
@@ -80,7 +95,9 @@ class FifthViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         navigationItem.title = "Ready To Match"
-
+        if segue.identifier == "secondMainViewController" {
+            segue.destinationViewController as! SecondMainViewController
+        }
     }
 
 }
