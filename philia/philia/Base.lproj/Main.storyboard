@@ -70,7 +70,7 @@ What's your name?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What city do you live?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sHP-1M-SHK">
-                                <rect key="frame" x="70" y="114" width="235" height="30"/>
+                                <rect key="frame" x="70" y="99" width="235" height="30"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -110,7 +110,7 @@ What's your name?</string>
                                 </date>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgr-MN-oEr">
-                                <rect key="frame" x="235" y="254" width="101" height="41"/>
+                                <rect key="frame" x="239" y="282" width="101" height="41"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Done">
@@ -149,7 +149,7 @@ What's your name?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soP-ZL-Axy">
-                                <rect key="frame" x="50" y="134" width="70" height="30"/>
+                                <rect key="frame" x="70" y="117" width="70" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label="nature"/>
                                 <state key="normal" title="nature">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -159,7 +159,7 @@ What's your name?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEP-vT-UoZ">
-                                <rect key="frame" x="130" y="134" width="70" height="30"/>
+                                <rect key="frame" x="150" y="117" width="70" height="30"/>
                                 <state key="normal" title="culture">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -168,7 +168,7 @@ What's your name?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caM-SQ-ScV">
-                                <rect key="frame" x="210" y="134" width="70" height="30"/>
+                                <rect key="frame" x="230" y="117" width="70" height="30"/>
                                 <state key="normal" title="ambition">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -177,7 +177,7 @@ What's your name?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwD-s3-lUO">
-                                <rect key="frame" x="50" y="169" width="70" height="30"/>
+                                <rect key="frame" x="70" y="152" width="70" height="30"/>
                                 <state key="normal" title="career">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -186,7 +186,7 @@ What's your name?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edU-dM-dat">
-                                <rect key="frame" x="130" y="169" width="70" height="30"/>
+                                <rect key="frame" x="150" y="152" width="70" height="30"/>
                                 <state key="normal" title="travel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -195,7 +195,7 @@ What's your name?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="32" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K5-Xd-ys6">
-                                <rect key="frame" x="210" y="169" width="70" height="30"/>
+                                <rect key="frame" x="230" y="152" width="70" height="30"/>
                                 <state key="normal" title="education">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -204,7 +204,7 @@ What's your name?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="64" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sL3-CC-1bk">
-                                <rect key="frame" x="50" y="204" width="70" height="30"/>
+                                <rect key="frame" x="70" y="187" width="70" height="30"/>
                                 <state key="normal" title="fashion">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -213,7 +213,7 @@ What's your name?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="128" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecw-vS-trU">
-                                <rect key="frame" x="130" y="204" width="70" height="30"/>
+                                <rect key="frame" x="150" y="187" width="70" height="30"/>
                                 <state key="normal" title="ethics">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -222,7 +222,7 @@ What's your name?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="256" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ER3-WO-zdf">
-                                <rect key="frame" x="210" y="204" width="70" height="30"/>
+                                <rect key="frame" x="230" y="187" width="70" height="30"/>
                                 <state key="normal" title="religion">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -231,7 +231,7 @@ What's your name?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="512" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuT-AD-5kx">
-                                <rect key="frame" x="50" y="239" width="70" height="30"/>
+                                <rect key="frame" x="70" y="222" width="70" height="30"/>
                                 <state key="normal" title="power">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -240,7 +240,7 @@ What's your name?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1024" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tb2-s6-fKh">
-                                <rect key="frame" x="130" y="239" width="70" height="30"/>
+                                <rect key="frame" x="150" y="222" width="70" height="30"/>
                                 <state key="normal" title="wealth">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -249,7 +249,7 @@ What's your name?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2048" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CU-ef-vdR">
-                                <rect key="frame" x="210" y="239" width="70" height="30"/>
+                                <rect key="frame" x="230" y="222" width="70" height="30"/>
                                 <state key="normal" title="drive">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -258,7 +258,7 @@ What's your name?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4096" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDz-ql-it3">
-                                <rect key="frame" x="50" y="274" width="70" height="30"/>
+                                <rect key="frame" x="70" y="257" width="70" height="30"/>
                                 <state key="normal" title="beauty">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -267,7 +267,7 @@ What's your name?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8192" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyR-qS-7xz">
-                                <rect key="frame" x="130" y="274" width="70" height="30"/>
+                                <rect key="frame" x="150" y="257" width="70" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="yWY-Mg-8tp"/>
                                 </constraints>
@@ -279,7 +279,7 @@ What's your name?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="16384" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uty-gw-dzY">
-                                <rect key="frame" x="210" y="274" width="70" height="30"/>
+                                <rect key="frame" x="230" y="257" width="70" height="30"/>
                                 <state key="normal" title="fitness">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -288,7 +288,7 @@ What's your name?</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRk-ZJ-N4P">
-                                <rect key="frame" x="0.0" y="20" width="335" height="107"/>
+                                <rect key="frame" x="20" y="0.0" width="335" height="107"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Awesome to meet you!
@@ -298,7 +298,7 @@ Pick your 3 fav things about life:</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="32768" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMI-G0-u31">
-                                <rect key="frame" x="50" y="309" width="70" height="30"/>
+                                <rect key="frame" x="70" y="292" width="70" height="30"/>
                                 <state key="normal" title="food">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -307,7 +307,7 @@ Pick your 3 fav things about life:</string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="65536" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVG-sR-pr0">
-                                <rect key="frame" x="130" y="309" width="70" height="30"/>
+                                <rect key="frame" x="150" y="292" width="70" height="30"/>
                                 <state key="normal" title="books">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -316,7 +316,7 @@ Pick your 3 fav things about life:</string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="131072" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8j-xV-ASi">
-                                <rect key="frame" x="210" y="309" width="70" height="30"/>
+                                <rect key="frame" x="230" y="292" width="70" height="30"/>
                                 <state key="normal" title="artistry">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -517,7 +517,7 @@ and once you find your
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIQ-3J-0ah">
-                                <rect key="frame" x="48" y="28" width="278" height="90"/>
+                                <rect key="frame" x="46" y="15" width="278" height="90"/>
                                 <string key="text">Yah! All done, Jake!
 Next up... here are 
 some potential Mrs. Jakes!</string>
@@ -526,7 +526,7 @@ some potential Mrs. Jakes!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8B-MA-XxJ">
-                                <rect key="frame" x="70" y="123" width="234" height="141"/>
+                                <rect key="frame" x="68" y="110" width="234" height="141"/>
                                 <string key="text">You'll be able to see what your 
 potential Mrs. looks like once 
 your values match!  Your profile 
@@ -538,7 +538,7 @@ what are ya waiting for?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHl-4X-1dl">
-                                <rect key="frame" x="65" y="265" width="245" height="54"/>
+                                <rect key="frame" x="63" y="252" width="245" height="54"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="go meet my matches!"/>
@@ -590,45 +590,102 @@ what are ya waiting for?</string>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1a5-4D-ieq">
                                 <rect key="frame" x="0.0" y="149" width="125" height="315"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="x4T-BD-bJp" appends="YES" id="5Kb-iM-u1y"/>
+                                    <outletCollection property="gestureRecognizers" destination="Odu-Q7-xT1" appends="YES" id="AdO-Do-ynV"/>
+                                    <outletCollection property="gestureRecognizers" destination="Mml-Lm-QZm" appends="YES" id="fzC-yx-dNF"/>
+                                </connections>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9OX-PT-GdD">
                                 <rect key="frame" x="125" y="149" width="125" height="315"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTI-Qb-Kct">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTI-Qb-Kct">
                                 <rect key="frame" x="0.0" y="467" width="125" height="84"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Beyonce, 30
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Beyonce, 30
 Las Vegas, NV
-7mi</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="7mi">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWC-Io-G5y">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWC-Io-G5y">
                                 <rect key="frame" x="125" y="467" width="125" height="84"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Scoobydoo, 32
-Las Vegas, NV
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Scoobydoo, 32
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Las Vegas, NV
 5mi</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dub-LJ-XDJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dub-LJ-XDJ">
                                 <rect key="frame" x="250" y="467" width="125" height="84"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Ashley, 28
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Ashley, 28
 Las Vegas, NV
-2mi</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="2mi">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oS9-Pj-xoe">
                                 <rect key="frame" x="250" y="149" width="125" height="315"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GlU-7b-iGD" appends="YES" id="nI6-Ca-q7U"/>
+                                    <outletCollection property="gestureRecognizers" destination="OVi-Ha-QNo" appends="YES" id="zro-YI-oU7"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="0Af-dR-moy" appends="YES" id="Nz0-Bu-GP9"/>
+                            <outletCollection property="gestureRecognizers" destination="Nz3-Lh-neC" appends="YES" id="psT-EU-4lE"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="rct-Gt-W44"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -643,6 +700,13 @@ Las Vegas, NV
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vh7-GR-wOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="x4T-BD-bJp"/>
+                <swipeGestureRecognizer direction="right" id="Odu-Q7-xT1"/>
+                <swipeGestureRecognizer direction="right" id="0Af-dR-moy"/>
+                <swipeGestureRecognizer direction="right" id="Nz3-Lh-neC"/>
+                <swipeGestureRecognizer direction="right" id="GlU-7b-iGD"/>
+                <swipeGestureRecognizer direction="right" id="Mml-Lm-QZm"/>
+                <swipeGestureRecognizer direction="right" id="OVi-Ha-QNo"/>
             </objects>
             <point key="canvasLocation" x="2868.5" y="121"/>
         </scene>
@@ -736,7 +800,7 @@ Las Vegas, NV
                                 <rect key="frame" x="133" y="524" width="109" height="87"/>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tak-gr-vyz">
-                                <rect key="frame" x="20" y="149" width="338" height="332"/>
+                                <rect key="frame" x="0.0" y="149" width="375" height="332"/>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

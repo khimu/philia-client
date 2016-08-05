@@ -58,13 +58,13 @@ class MainViewController: UIViewController, DelegateUIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(patternImage: UIImage(named: "lasvegas.jpg")!)
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "lasvegas1.jpg")!)
         
         overlayView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.3)
         
         self.modalPresentationStyle = .OverCurrentContext
         
-        logoImage.image = UIImage(named: "philia");
+        logoImage.image = UIImage(named: "philia1");
         
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
