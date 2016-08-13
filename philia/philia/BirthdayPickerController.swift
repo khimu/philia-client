@@ -11,8 +11,10 @@ import UIKit
 
 class BirthdayPickerController: UIViewController {
     
-    var name:String = ""
-    var birthday:String = ""
+    /*
+     * Gathers the user's information
+     */
+    var profile = ProfileModel()
     
     @IBOutlet var birthdayPicker: UIDatePicker!
     @IBOutlet var birthdayDoneButton: UIButton!
@@ -31,8 +33,9 @@ class BirthdayPickerController: UIViewController {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "MM/dd/yyyy"
         
-        locationController.name = name
-        locationController.birthday = dateFormatter.stringFromDate(birthdayPicker.date)
+        self.profile.birthday = dateFormatter.stringFromDate(birthdayPicker.date)
+        
+        locationController.profile = self.profile
         locationController.delegate = self.delegate
         
         self.delegate!.onUserAction(locationController)
@@ -40,6 +43,7 @@ class BirthdayPickerController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("\nBirthdayViewController\nviewDidLoad\nname:\(profile.name)")
         
         UIColor.blackColor().colorWithAlphaComponent(0).CGColor
         

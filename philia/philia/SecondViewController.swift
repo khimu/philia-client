@@ -10,13 +10,13 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    var name:String = ""
-    var birthday:String = ""
-    var location:String = ""
+    
+    /*
+     * Gathers the user's information
+     */
+    var profile = ProfileModel()
     
     var delegate: DelegateUIViewController?
-    
-    var userInterest: Int = 0
     
     var countSelects = 0
     
@@ -42,11 +42,11 @@ class SecondViewController: UIViewController {
     @IBAction func buttonPressed(sender: UIButton) {
         let answer: Int = Int(sender.tag)
         
-        if((answer & userInterest) == 0) {
+        if((answer & profile.userInterest) == 0) {
             countSelects += 1
         }
         
-        userInterest = answer | userInterest
+        self.profile.userInterest = answer | self.profile.userInterest
         
         sender.backgroundColor = UIColor.redColor()
         
@@ -56,10 +56,7 @@ class SecondViewController: UIViewController {
             
             let thirdViewController = storyBoard.instantiateViewControllerWithIdentifier("thirdViewController") as! ThirdViewController
             
-            thirdViewController.userInterest = userInterest
-            thirdViewController.name = name
-            thirdViewController.birthday = birthday
-            thirdViewController.location = location
+            thirdViewController.profile = self.profile
             
             thirdViewController.delegate = self.delegate
             
@@ -73,6 +70,8 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("\nSecondViewController\nviewDidLoad\nname:\(profile.name)")
+        
         self.natureButton.layer.cornerRadius = 10
         self.cultureButton.layer.cornerRadius = 10
         self.ambition.layer.cornerRadius = 10
@@ -92,7 +91,7 @@ class SecondViewController: UIViewController {
         self.booksButton.layer.cornerRadius = 10
         self.artistryButton.layer.cornerRadius = 10
 
-        self.messageLabel.text = "Hi \(name)\n" + self.messageLabel.text!
+        self.messageLabel.text = "Hi \(profile.name)\n" + self.messageLabel.text!
         
         UIColor.blackColor().colorWithAlphaComponent(0).CGColor
         view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.3)

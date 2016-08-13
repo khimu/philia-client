@@ -9,16 +9,14 @@
 import UIKit
 
 class FourthViewController: UIViewController {
+    
+    /*
+     * Gathers the user's information
+     */
+    var profile = ProfileModel()
+    
     var delegate: DelegateUIViewController?
-    
-    // 1 = men, 2 = women, 3 = both
-    let mapLabel1ToBitMapForGenderPreference: [Int: String] = [1: "Mr.", 2: "Mrs.", 4: "Mr or Mrs"]
-    
-    let mapLabel2ToBitMapForGenderPreference: [Int: String] = [1: "he'll", 2: "she'll", 4: "he or she will"]
 
-    let mapLabel3ToBitMapForGenderPreference: [Int: String] = [1: "man", 2: "woman", 4: "partner"]
-    
-    
     @IBOutlet var dynamicHeaderLabel: UILabel!
     
 
@@ -28,32 +26,22 @@ class FourthViewController: UIViewController {
     
     @IBOutlet var debugLabel: UILabel!
 
-    // turn this into a model object
-    var name:String = ""
-    var birthday:String = ""
-    var location:String = ""
-    var userInterest: Int = 0
-    var userGenderPreference: Int = 0
-    var userIntensionPreference: Int = 0
     
     @IBAction func pressedButton(sender: UIButton) {
         sender.backgroundColor = UIColor.redColor()
         
+        print("\nFourthViewController\npressedButton\nname:\(profile.name)")
+        
         let answer: Int = Int(sender.tag)
         
-        userIntensionPreference = answer | userIntensionPreference
+        self.profile.userIntensionPreference = answer | self.profile.userIntensionPreference
         
         
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
         let fifthViewController = storyBoard.instantiateViewControllerWithIdentifier("fifthViewController") as! FifthViewController
         
-        fifthViewController.userInterest = userInterest
-        fifthViewController.name = name
-        fifthViewController.userGenderPreference = userGenderPreference
-        fifthViewController.userIntensionPreference = userIntensionPreference
-        fifthViewController.birthday = birthday
-        fifthViewController.location = location
+        fifthViewController.profile = self.profile
         
         self.delegate!.onUserAction(fifthViewController)
         
@@ -62,15 +50,18 @@ class FourthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("\nFourthViewController\nviewDidLoad\nname:\(profile.name)")
+        
         self.marriageButton.layer.cornerRadius = 10
         self.hangoutButton.layer.cornerRadius = 10
         self.curiousButton.layer.cornerRadius = 10
         
-        dynamicHeaderLabel.text = "Ok awesome\nand once you find your\n\(mapLabel3ToBitMapForGenderPreference[userGenderPreference]!) you'd like to:"
+        dynamicHeaderLabel.text = "Ok awesome\nand once you find your\n\(profile.userGenderPreferenceLabel3()) you'd like to:"
         
-        marriageButton.setTitle("if this works, \(mapLabel2ToBitMapForGenderPreference[userGenderPreference]!) be \(mapLabel1ToBitMapForGenderPreference[userGenderPreference]!) \(name)", forState: .Normal)
+        marriageButton.setTitle("if this works, \(profile.userGenderPreferenceLabel2()) be \(profile.userGenderPreferenceLabel()) \(profile.name)", forState: .Normal)
         
-        debugLabel.text = "\(userGenderPreference) and \(userIntensionPreference) and \(userInterest) for \(name)"
+        // remove button and this code.  button is hidden and screen size height must be increased to see
+        debugLabel.text = "\(profile.userGenderPreference) and \(profile.userIntensionPreference) and \(profile.userInterest) for \(profile.name)"
         
         UIColor.blackColor().colorWithAlphaComponent(0).CGColor
         view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.3)

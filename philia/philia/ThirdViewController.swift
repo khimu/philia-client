@@ -13,6 +13,12 @@ import UIKit
  */
 class ThirdViewController: UIViewController {
     
+    
+    /*
+     * Gathers the user's information
+     */
+    var profile = ProfileModel()
+    
     var delegate: DelegateUIViewController?
     
     @IBOutlet var womenButton: UIButton!
@@ -21,28 +27,16 @@ class ThirdViewController: UIViewController {
     
     @IBOutlet var debugLabel: UILabel!
     
-    var name:String = ""
-    var birthday:String = ""
-    var location:String = ""
-    
-    var userInterest: Int = 0
-    
-    var userGenderPreference: Int = 0
-    
     @IBAction func pressedButton(sender: UIButton) {
         let answer: Int = Int(sender.tag)
         
-        userGenderPreference = answer | userGenderPreference
+        self.profile.userGenderPreference = answer | self.profile.userGenderPreference
 
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
         let fourthViewController = storyBoard.instantiateViewControllerWithIdentifier("fourthViewController") as! FourthViewController
         
-        fourthViewController.userInterest = userInterest
-        fourthViewController.name = name
-        fourthViewController.userGenderPreference = userGenderPreference
-        fourthViewController.birthday = birthday
-        fourthViewController.location = location
+        fourthViewController.profile = self.profile
         
         fourthViewController.delegate = self.delegate
         
@@ -51,13 +45,13 @@ class ThirdViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("\nThirdViewController\nviewDidLoad\nname:\(profile.name)")
+        
         self.womenButton.layer.cornerRadius = 10
         self.menButton.layer.cornerRadius = 10
         self.bothButton.layer.cornerRadius = 10
         
-        
-        debugLabel.text = "\(userGenderPreference) and \(userInterest) for \(name)"
-
+        debugLabel.text = "\(profile.userGenderPreference) and \(profile.userInterest) for \(profile.name)"
         
         UIColor.blackColor().colorWithAlphaComponent(0).CGColor
         view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.3)

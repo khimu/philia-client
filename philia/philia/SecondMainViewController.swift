@@ -11,20 +11,21 @@ import UIKit
 
 class SecondMainViewController: UITabBarController {
     
-    var name:String = ""
-    var birthday:String = ""
-    var location:String = ""
-    var userInterest: Int = 0
-    var userGenderPreference: Int = 0
-    var userIntensionPreference: Int = 0
+    
+    /*
+     * Gathers the user's information
+     */
+    var profile = ProfileModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print ("\nSecondMainViewController\nname \(profile.name) birthday: \(profile.birthday)\n\n")
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 }

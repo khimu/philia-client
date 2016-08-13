@@ -21,7 +21,7 @@ class HttpHelper {
             let jsonData = try NSJSONSerialization.dataWithJSONObject(json, options: .PrettyPrinted)
             
             // create post request
-            let url = NSURL(string: "https://107.170.234.144:9090/profile")!
+            let url = NSURL(string: "http://107.170.234.144:9090/profile")!
             
             let request = NSMutableURLRequest(URL: url)
             

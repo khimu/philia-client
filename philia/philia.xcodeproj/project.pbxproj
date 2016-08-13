@@ -22,9 +22,10 @@
 		16B9BCA21D4DE43800D6FEB6 /* BirthdayPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B9BCA11D4DE43800D6FEB6 /* BirthdayPickerController.swift */; };
 		16B9BCA41D505D0C00D6FEB6 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B9BCA31D505D0C00D6FEB6 /* PageViewController.swift */; };
 		16B9BCA61D50707100D6FEB6 /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B9BCA51D50707100D6FEB6 /* LocationController.swift */; };
-		16B9BCA81D51C6EE00D6FEB6 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B9BCA71D51C6EE00D6FEB6 /* MatchViewController.swift */; };
 		16B9BCAA1D51C87C00D6FEB6 /* SecondMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B9BCA91D51C87C00D6FEB6 /* SecondMainViewController.swift */; };
 		16B9BCAC1D51D0C700D6FEB6 /* MatchContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B9BCAB1D51D0C700D6FEB6 /* MatchContainerViewController.swift */; };
+		16B9BCAE1D55CB7800D6FEB6 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B9BCAD1D55CB7800D6FEB6 /* ProfileController.swift */; };
+		16B9BCB01D579C2100D6FEB6 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B9BCAF1D579C2100D6FEB6 /* ProfileModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +46,10 @@
 		16B9BCA11D4DE43800D6FEB6 /* BirthdayPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthdayPickerController.swift; sourceTree = "<group>"; };
 		16B9BCA31D505D0C00D6FEB6 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		16B9BCA51D50707100D6FEB6 /* LocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
-		16B9BCA71D51C6EE00D6FEB6 /* MatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
 		16B9BCA91D51C87C00D6FEB6 /* SecondMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondMainViewController.swift; sourceTree = "<group>"; };
 		16B9BCAB1D51D0C700D6FEB6 /* MatchContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchContainerViewController.swift; sourceTree = "<group>"; };
+		16B9BCAD1D55CB7800D6FEB6 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		16B9BCAF1D579C2100D6FEB6 /* ProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +98,10 @@
 				16B9BCA11D4DE43800D6FEB6 /* BirthdayPickerController.swift */,
 				16B9BCA31D505D0C00D6FEB6 /* PageViewController.swift */,
 				16B9BCA51D50707100D6FEB6 /* LocationController.swift */,
-				16B9BCA71D51C6EE00D6FEB6 /* MatchViewController.swift */,
 				16B9BCA91D51C87C00D6FEB6 /* SecondMainViewController.swift */,
 				16B9BCAB1D51D0C700D6FEB6 /* MatchContainerViewController.swift */,
+				16B9BCAD1D55CB7800D6FEB6 /* ProfileController.swift */,
+				16B9BCAF1D579C2100D6FEB6 /* ProfileModel.swift */,
 			);
 			path = philia;
 			sourceTree = "<group>";
@@ -175,11 +178,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				16B9BC921D4C4FD400D6FEB6 /* FourthViewController.swift in Sources */,
-				16B9BCA81D51C6EE00D6FEB6 /* MatchViewController.swift in Sources */,
 				16B9BCAC1D51D0C700D6FEB6 /* MatchContainerViewController.swift in Sources */,
 				16B9BC8E1D4B468500D6FEB6 /* SecondViewController.swift in Sources */,
 				16B9BC961D4C732D00D6FEB6 /* HttpHelper.swift in Sources */,
 				16B9BCA41D505D0C00D6FEB6 /* PageViewController.swift in Sources */,
+				16B9BCAE1D55CB7800D6FEB6 /* ProfileController.swift in Sources */,
 				16B9BC941D4C4FE300D6FEB6 /* FifthViewController.swift in Sources */,
 				16B9BC7C1D4B1D5D00D6FEB6 /* ViewController.swift in Sources */,
 				16B9BCAA1D51C87C00D6FEB6 /* SecondMainViewController.swift in Sources */,
@@ -189,6 +192,7 @@
 				16B9BCA61D50707100D6FEB6 /* LocationController.swift in Sources */,
 				16B9BC901D4C3A2600D6FEB6 /* ThirdViewController.swift in Sources */,
 				16B9BC7A1D4B1D5D00D6FEB6 /* AppDelegate.swift in Sources */,
+				16B9BCB01D579C2100D6FEB6 /* ProfileModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

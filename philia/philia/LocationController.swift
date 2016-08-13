@@ -11,6 +11,12 @@ import UIKit
 
 class LocationController: UIViewController, UITextFieldDelegate {
     
+    
+    /*
+     * Gathers the user's information
+     */
+    var profile = ProfileModel()
+    
     /*
      * Allows access to parent method
      */
@@ -18,9 +24,6 @@ class LocationController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet var textField: UITextField!
-    var name:String = ""
-    var birthday:String = ""
-    var location:String = ""
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         self.view.endEditing(true)
@@ -33,9 +36,8 @@ class LocationController: UIViewController, UITextFieldDelegate {
         
         let secondViewController = storyBoard.instantiateViewControllerWithIdentifier("secondViewController") as! SecondViewController
         
-        secondViewController.name = name
-        secondViewController.birthday = birthday
-        secondViewController.location = textField.text!
+        self.profile.location = textField.text!
+        secondViewController.profile = self.profile
         
         secondViewController.delegate = self.delegate
         

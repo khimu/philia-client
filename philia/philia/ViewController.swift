@@ -16,6 +16,11 @@ import Foundation
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
+    /*
+     * Gathers the user's information
+     */
+    var profile = ProfileModel()
+    
     @IBOutlet var backgroundImageView: UIView!
     
     @IBOutlet var anotherTextLabel: UITextView!
@@ -43,7 +48,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         let birthdayPickerController = storyBoard.instantiateViewControllerWithIdentifier("birthdayPickerController") as! BirthdayPickerController
         
-        birthdayPickerController.name = textField.text!
+        self.profile.name = textField.text!
+        
+        birthdayPickerController.profile = self.profile
         birthdayPickerController.delegate = self.delegate
 
         self.delegate!.onUserAction(birthdayPickerController)
