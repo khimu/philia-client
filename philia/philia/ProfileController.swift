@@ -9,7 +9,9 @@
 import Foundation
 import UIKit
 
-class ProfileController: UIViewController {
+class ProfileController: UIViewController,UINavigationControllerDelegate {
+    
+    var delegate: DelegateUIViewController?
     
     var selectedMatchName: String = ""
     var selectedMatchImage: String = ""
@@ -17,9 +19,8 @@ class ProfileController: UIViewController {
     @IBOutlet var matchProfileImage: UIImageView!
     
     @IBOutlet var matchDetail: UIButton!
-    
-    @IBOutlet weak var backButton: UIButton!
-    
+
+    @IBOutlet weak var messageButton: UIButton!
     /*
      * Gathers the user's information
      */
@@ -29,12 +30,26 @@ class ProfileController: UIViewController {
         super.viewDidLoad()
         print("\nProfileController\nviewDidLoad\nname:\(profile.name)")
         
-       self.backButton.layer.cornerRadius = 10
+       self.messageButton.layer.cornerRadius = 10
        self.matchDetail.layer.cornerRadius = 10
         
        self.matchDetail.setTitle("Say hello to \(self.selectedMatchName)", forState: .Normal)
         
        self.matchProfileImage.image = UIImage(named: selectedMatchImage)
+        
+        //self.delegate?.showInNavigation(<#T##nextController: UIViewController##UIViewController#>)
+    }
+    
+    func navigationController(navigationController: UINavigationController, willShowViewController viewController: UIViewController,
+                              animated: Bool) {
+        
+        if("profileController" == (self.navigationController?.visibleViewController!.restorationIdentifier)!) {
+            self.navigationController!.setNavigationBarHidden(false, animated:true)
+        }
+        else {
+            self.navigationController!.setNavigationBarHidden(true, animated:true)
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {

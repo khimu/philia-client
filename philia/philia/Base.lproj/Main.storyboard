@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dqz-UW-oBt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kVF-KP-YLT">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -543,7 +543,7 @@ what are ya waiting for?</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="go meet my matches!"/>
                                 <connections>
-                                    <segue destination="aQ8-OH-B1q" kind="show" id="Hzk-Jl-IuU"/>
+                                    <segue destination="aQ8-OH-B1q" kind="show" id="He4-01-fI2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -575,14 +575,14 @@ what are ya waiting for?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="...your Potential Mrs. Jakes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkK-AT-TdY">
-                                <rect key="frame" x="60" y="61" width="254" height="40"/>
+                                <rect key="frame" x="60" y="68" width="254" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTI-Qb-Kct">
-                                <rect key="frame" x="0.0" y="467" width="125" height="84"/>
+                                <rect key="frame" x="0.0" y="468" width="125" height="84"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -606,7 +606,7 @@ Las Vegas, NV
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWC-Io-G5y">
-                                <rect key="frame" x="125" y="467" width="125" height="84"/>
+                                <rect key="frame" x="125" y="468" width="125" height="84"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -630,7 +630,7 @@ Las Vegas, NV
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dub-LJ-XDJ">
-                                <rect key="frame" x="250" y="467" width="125" height="84"/>
+                                <rect key="frame" x="250" y="468" width="125" height="84"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -653,13 +653,13 @@ Las Vegas, NV
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ou-ie-ob9">
-                                <rect key="frame" x="5" y="149" width="120" height="315"/>
+                                <rect key="frame" x="2" y="149" width="120" height="315"/>
                                 <connections>
                                     <action selector="pressedButton1:" destination="Mdt-4F-SQD" eventType="touchUpInside" id="fu8-CG-Xo2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dct-2W-3oY">
-                                <rect key="frame" x="127" y="149" width="120" height="315"/>
+                                <rect key="frame" x="126" y="149" width="120" height="315"/>
                                 <connections>
                                     <action selector="pressedButton2:" destination="Mdt-4F-SQD" eventType="touchUpInside" id="AnU-D6-aTc"/>
                                 </connections>
@@ -667,7 +667,7 @@ Las Vegas, NV
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBL-b3-hDB">
                                 <rect key="frame" x="250" y="149" width="120" height="315"/>
                                 <connections>
-                                    <action selector="pressedButton3:" destination="Mdt-4F-SQD" eventType="touchUpInside" id="0g3-zP-SZ8"/>
+                                    <action selector="pressedButton3:" destination="Mdt-4F-SQD" eventType="touchUpInside" id="29n-jl-jPL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -687,7 +687,7 @@ Las Vegas, NV
                         <outlet property="profileDetail3" destination="dub-LJ-XDJ" id="z6b-Zq-Bfg"/>
                         <outlet property="profileImage1" destination="5Ou-ie-ob9" id="FSy-lB-UeH"/>
                         <outlet property="profileImage2" destination="dct-2W-3oY" id="Xlc-Ls-tVv"/>
-                        <outlet property="profileImage3" destination="gBL-b3-hDB" id="H7n-5N-g7q"/>
+                        <outlet property="profileImage3" destination="gBL-b3-hDB" id="Fcn-zK-DgE"/>
                         <outlet property="upperMessageLabel" destination="nkK-AT-TdY" id="xOD-bd-PSv"/>
                     </connections>
                 </viewController>
@@ -705,7 +705,7 @@ Las Vegas, NV
         <!--Profile Controller-->
         <scene sceneID="fiM-mX-eBi">
             <objects>
-                <viewController storyboardIdentifier="profileController" id="MCw-Lt-inZ" customClass="ProfileController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profileController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MCw-Lt-inZ" customClass="ProfileController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1PA-cY-VSt"/>
                         <viewControllerLayoutGuide type="bottom" id="fjd-2X-JvU"/>
@@ -715,29 +715,26 @@ Las Vegas, NV
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hcu-J7-UXN">
-                                <rect key="frame" x="67" y="112" width="240" height="128"/>
+                                <rect key="frame" x="67" y="162" width="240" height="128"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cZa-6h-QI5">
-                                <rect key="frame" x="128" y="318" width="119" height="122"/>
+                                <rect key="frame" x="128" y="368" width="119" height="122"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Its a Match!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHn-uh-DWY">
-                                <rect key="frame" x="77" y="46" width="221" height="41"/>
+                                <rect key="frame" x="77" y="96" width="221" height="41"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAj-ok-nYj">
-                                <rect key="frame" x="15" y="624" width="83" height="30"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="Mdt-4F-SQD" kind="show" id="4J9-Bg-45Y"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbp-Cm-3HZ">
-                                <rect key="frame" x="20" y="259" width="335" height="42"/>
+                                <rect key="frame" x="20" y="309" width="335" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Say hello to Beyonce!"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyc-G1-nAm">
+                                <rect key="frame" x="238" y="561" width="93" height="40"/>
+                                <state key="normal" title="message"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -745,9 +742,9 @@ Las Vegas, NV
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="backButton" destination="HAj-ok-nYj" id="ZJQ-Xu-OKZ"/>
                         <outlet property="matchDetail" destination="Bbp-Cm-3HZ" id="We6-d0-yyC"/>
                         <outlet property="matchProfileImage" destination="hcu-J7-UXN" id="bSP-wT-QIJ"/>
+                        <outlet property="messageButton" destination="dyc-G1-nAm" id="c5G-bi-H9N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RzL-pr-aTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -779,7 +776,7 @@ Las Vegas, NV
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wGC-Kw-9bL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4408.5" y="159.5"/>
+            <point key="canvasLocation" x="3923.5" y="254.5"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="6Pd-C0-HEx">
@@ -803,7 +800,7 @@ Las Vegas, NV
         <!--Second Main View Controller-->
         <scene sceneID="PLa-rn-5VD">
             <objects>
-                <tabBarController storyboardIdentifier="secondMainViewController" id="aQ8-OH-B1q" customClass="SecondMainViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="secondMainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aQ8-OH-B1q" customClass="SecondMainViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="6LX-fh-ML4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -822,7 +819,7 @@ Las Vegas, NV
         <!--Navigation-->
         <scene sceneID="XgM-Mk-W5Y">
             <objects>
-                <navigationController storyboardIdentifier="navigationController" title="Navigation" automaticallyAdjustsScrollViewInsets="NO" id="kVF-KP-YLT" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navigationController" title="Navigation" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kVF-KP-YLT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QbE-8v-RMg">
@@ -830,10 +827,13 @@ Las Vegas, NV
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dqz-UW-oBt" kind="relationship" relationship="rootViewController" id="X9o-XD-vKN"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPa-ye-1AA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2000.5" y="801.5"/>
+            <point key="canvasLocation" x="-126.5" y="334.5"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="kZA-zp-XpJ">
@@ -856,6 +856,7 @@ Las Vegas, NV
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="iBX-tP-irE"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="logoImage" destination="eVd-c3-llu" id="Lbj-qL-jeX"/>
@@ -878,10 +879,7 @@ Las Vegas, NV
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tkl-sP-y6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4821.5" y="101.5"/>
+            <point key="canvasLocation" x="4353.5" y="222.5"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="EEw-cG-B26"/>
-    </inferredMetricsTieBreakers>
 </document>

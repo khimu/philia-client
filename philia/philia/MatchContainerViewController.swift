@@ -11,6 +11,9 @@ import UIKit
 
 class MatchContainerViewController: UIViewController {
     
+    var delegate: DelegateUIViewController?
+    
+    
     /*
      * Gathers the user's information
      */
@@ -32,6 +35,7 @@ class MatchContainerViewController: UIViewController {
     @IBOutlet weak var profileImage2: UIButton!
     @IBOutlet weak var profileImage3: UIButton!
     
+
     @IBOutlet weak var profileDetail1: UILabel!
     @IBOutlet weak var profileDetail2: UILabel!
     @IBOutlet weak var profileDetail3: UILabel!
@@ -190,9 +194,11 @@ class MatchContainerViewController: UIViewController {
         profileController.selectedMatchName = profileImages[keys[selectedIndex]]![0]
         profileController.selectedMatchImage = keys[selectedIndex]
         
-
-        self.presentViewController(profileController, animated: true, completion: nil)
-        //self.performSegueWithIdentifier("profileController", sender: sender)
+        profileController.delegate = self.delegate
+        
+        //self.presentViewController(profileController, animated: true, completion: nil)
+        
+        self.delegate?.showInNavigation(profileController)
     }
 
     

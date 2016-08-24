@@ -42,6 +42,7 @@ class FourthViewController: UIViewController {
         let fifthViewController = storyBoard.instantiateViewControllerWithIdentifier("fifthViewController") as! FifthViewController
         
         fifthViewController.profile = self.profile
+        fifthViewController.delegate = self.delegate
         
         self.delegate!.onUserAction(fifthViewController)
         

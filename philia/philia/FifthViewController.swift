@@ -10,6 +10,8 @@ import UIKit
 
 class FifthViewController: UIViewController {
     
+    var delegate: DelegateUIViewController?
+    
     /*
      * Gathers the user's information
      */
@@ -40,6 +42,52 @@ class FifthViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    /*
+    @IBAction func cusomSegue(sender: UIButton) {
+        
+        print("\nFifthViewController\nabout to seque and setting value for secondMainViewController \(profile.name)")
+        
+        // today
+        let date = NSDate()
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        
+        let calendar = NSCalendar.currentCalendar()
+        
+        let ageComponents = calendar.components(.Year,
+                                                fromDate: dateFormatter.dateFromString(profile.birthday)!,
+                                                toDate: date,
+                                                options: []).year
+        
+        var fullNameArr = profile.name.split(regex: "[ ]+")
+        let lastName = fullNameArr.count > 1 ? fullNameArr[1] : ""
+        
+        
+        let json = [ "interest": profile.userInterest, "genderInterest": profile.userGenderPreference, "datingIntension": profile.userIntensionPreference, "city": profile.location, "state": "?", "zipcode": "?", "country": "US", "firstName": fullNameArr[0], "lastName": lastName, "birthdate": profile.birthday, "age": ageComponents ]
+        
+        //UIDevice.currentDevice().identifierForVendor!.UUIDString
+        
+        HttpHelper.httpHelper.sendProfile(json);
+        
+        
+        let secondMainViewController = self.storyboard?.instantiateViewControllerWithIdentifier("secondMainViewController") as! SecondMainViewController
+
+        secondMainViewController.profile = self.profile
+        
+        print("Set to secondMainViewController profile.name:" + secondMainViewController.profile.name)
+        
+        let matchContainerViewController = secondMainViewController.viewControllers![0] as! MatchContainerViewController
+        
+        matchContainerViewController.profile = self.profile
+        matchContainerViewController.delegate = self.delegate
+        
+        self.delegate?.showInNavigation(secondMainViewController)
+        
+    }
+ */
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
@@ -77,7 +125,8 @@ class FifthViewController: UIViewController {
             let matchContainerViewController = secondMainViewController.viewControllers![0] as! MatchContainerViewController
 
             matchContainerViewController.profile = self.profile
-
+        
+        matchContainerViewController.delegate = self.delegate
     }
 }
 

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MainViewController: UIViewController, DelegateUIViewController {
+class MainViewController: UIViewController, DelegateUIViewController,UINavigationControllerDelegate {
     
     @IBOutlet var overlayView: UIView!
     
@@ -73,6 +73,7 @@ class MainViewController: UIViewController, DelegateUIViewController {
         activeViewController = self.embeddedViewController
         
         self.embeddedViewController.delegate = self;
+
     }
     
     /*
@@ -80,9 +81,53 @@ class MainViewController: UIViewController, DelegateUIViewController {
      */
     func onUserAction(nextController: UIViewController) {
         activeViewController = nextController
+        self.navigationController!.setNavigationBarHidden(true, animated:true)
+    }
+    
+    /*
+     * This works
+     */
+    func showInNavigation(nextController: UIViewController) {
+
+        print("Title: \(nextController.restorationIdentifier)")
+        
+        if("profileController" == nextController.restorationIdentifier) {
+            self.navigationController!.setNavigationBarHidden(false, animated:true)
+        }
+        else {
+            self.navigationController!.setNavigationBarHidden(true, animated:true)
+        }
+        
+        self.navigationController?.showViewController(nextController, sender:self)
+    }
+    
+    /* This is not used */
+    func disableNavigation() {
+        self.navigationController!.setNavigationBarHidden(true, animated:true)
+    }
+
+    /*
+     * This is not working.
+     */
+    func navigationController(navigationController: UINavigationController, willShowViewController viewController: UIViewController,
+                              animated: Bool) {
+        
+        print("navigationController")
+        
+        if("profileController" == (self.navigationController?.visibleViewController!.restorationIdentifier)!) {
+            self.navigationController!.setNavigationBarHidden(false, animated:true)
+        }
+        else {
+            self.navigationController!.setNavigationBarHidden(true, animated:true)
+        }
+        
     }
 }
 
 protocol DelegateUIViewController{
     func onUserAction(nextController: UIViewController)
+    
+    func showInNavigation(nextController: UIViewController)
+    
+    func disableNavigation()
 }
