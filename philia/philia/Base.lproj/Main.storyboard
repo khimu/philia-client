@@ -731,6 +731,9 @@ Las Vegas, NV
                                 <rect key="frame" x="20" y="309" width="335" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Say hello to Beyonce!"/>
+                                <connections>
+                                    <segue destination="3IW-zQ-rHa" kind="show" id="RNm-fh-YZ1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyc-G1-nAm">
                                 <rect key="frame" x="238" y="561" width="93" height="40"/>
@@ -751,32 +754,43 @@ Las Vegas, NV
             </objects>
             <point key="canvasLocation" x="3500.5" y="254.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="3ZM-ln-rHv">
+        <!--Conversation View Controller-->
+        <scene sceneID="ddS-iH-pAa">
             <objects>
-                <viewController id="c00-lg-HUG" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="HTC-iC-bxU"/>
-                        <viewControllerLayoutGuide type="bottom" id="3db-yX-gcc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dfK-2C-2I3">
+                <tableViewController id="3IW-zQ-rHa" customClass="ConversationViewController" customModule="philia" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cjy-78-7jN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FfR-g7-CIi">
-                                <rect key="frame" x="20" y="20" width="335" height="551"/>
-                                <connections>
-                                    <segue destination="l5b-fM-ZmO" kind="embed" id="XR5-GN-ZZb"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                        <textField key="tableFooterView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="Beu-jA-nms">
+                            <rect key="frame" x="0.0" y="88" width="375" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConversationCell" rowHeight="60" id="BrI-GU-F66">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BrI-GU-F66" id="ZV0-7h-lPN">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3IW-zQ-rHa" id="4LU-uH-8XT"/>
+                            <outlet property="delegate" destination="3IW-zQ-rHa" id="FEK-D5-NKF"/>
+                        </connections>
+                    </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wGC-Kw-9bL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <connections>
+                        <outlet property="conversationTextField" destination="BrI-GU-F66" id="tTx-ci-cS3"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4hH-63-nSP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3923.5" y="254.5"/>
+            <point key="canvasLocation" x="4019.5" y="254.5"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="6Pd-C0-HEx">
@@ -866,20 +880,6 @@ Las Vegas, NV
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0L-4j-UhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="349.5" y="328.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="QSm-DX-d95">
-            <objects>
-                <viewController id="l5b-fM-ZmO" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="O4S-qs-vO7">
-                        <rect key="frame" x="0.0" y="0.0" width="335" height="551"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tkl-sP-y6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4353.5" y="222.5"/>
         </scene>
     </scenes>
 </document>

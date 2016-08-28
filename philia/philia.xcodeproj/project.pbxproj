@@ -26,6 +26,8 @@
 		16B9BCAC1D51D0C700D6FEB6 /* MatchContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B9BCAB1D51D0C700D6FEB6 /* MatchContainerViewController.swift */; };
 		16B9BCAE1D55CB7800D6FEB6 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B9BCAD1D55CB7800D6FEB6 /* ProfileController.swift */; };
 		16B9BCB01D579C2100D6FEB6 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B9BCAF1D579C2100D6FEB6 /* ProfileModel.swift */; };
+		16B9BCB41D73996000D6FEB6 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B9BCB31D73996000D6FEB6 /* ConversationViewController.swift */; };
+		16B9BCB61D739C8900D6FEB6 /* TextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B9BCB51D739C8900D6FEB6 /* TextInputTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		16B9BCAB1D51D0C700D6FEB6 /* MatchContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchContainerViewController.swift; sourceTree = "<group>"; };
 		16B9BCAD1D55CB7800D6FEB6 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		16B9BCAF1D579C2100D6FEB6 /* ProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		16B9BCB31D73996000D6FEB6 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		16B9BCB51D739C8900D6FEB6 /* TextInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				16B9BC791D4B1D5D00D6FEB6 /* AppDelegate.swift */,
 				16B9BC7B1D4B1D5D00D6FEB6 /* ViewController.swift */,
 				16B9BC7D1D4B1D5D00D6FEB6 /* Main.storyboard */,
+				16B9BCB31D73996000D6FEB6 /* ConversationViewController.swift */,
+				16B9BCB51D739C8900D6FEB6 /* TextInputTableViewCell.swift */,
 				16B9BC911D4C4FD400D6FEB6 /* FourthViewController.swift */,
 				16B9BC931D4C4FE300D6FEB6 /* FifthViewController.swift */,
 				16B9BC8D1D4B468500D6FEB6 /* SecondViewController.swift */,
@@ -184,9 +190,11 @@
 				16B9BCA41D505D0C00D6FEB6 /* PageViewController.swift in Sources */,
 				16B9BCAE1D55CB7800D6FEB6 /* ProfileController.swift in Sources */,
 				16B9BC941D4C4FE300D6FEB6 /* FifthViewController.swift in Sources */,
+				16B9BCB61D739C8900D6FEB6 /* TextInputTableViewCell.swift in Sources */,
 				16B9BC7C1D4B1D5D00D6FEB6 /* ViewController.swift in Sources */,
 				16B9BCAA1D51C87C00D6FEB6 /* SecondMainViewController.swift in Sources */,
 				16B9BCA21D4DE43800D6FEB6 /* BirthdayPickerController.swift in Sources */,
+				16B9BCB41D73996000D6FEB6 /* ConversationViewController.swift in Sources */,
 				16B9BCA01D4DC63400D6FEB6 /* MainViewController.swift in Sources */,
 				16B9BC981D4C86B400D6FEB6 /* HelperUtil.swift in Sources */,
 				16B9BCA61D50707100D6FEB6 /* LocationController.swift in Sources */,
