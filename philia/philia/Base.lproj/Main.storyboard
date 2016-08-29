@@ -784,9 +784,6 @@ Las Vegas, NV
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="conversationTextField" destination="BrI-GU-F66" id="tTx-ci-cS3"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hH-63-nSP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

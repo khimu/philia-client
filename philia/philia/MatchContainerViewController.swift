@@ -53,7 +53,20 @@ class MatchContainerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // initialize match array here
+        /*
+         
+ let json = [ "interest": profile.userInterest, "genderInterest": profile.userGenderPreference, "datingIntension": profile.userIntensionPreference, "city": profile.location, "state": "?", "zipcode": "?", "country": "US", "firstName": fullNameArr[0], "lastName": lastName, "birthdate": profile.birthday, "age": ageComponents ]
+ 
+ //UIDevice.currentDevice().identifierForVendor!.UUIDString
+ 
+ HttpHelper.httpHelper.getMatches(json);
         
+         // need to populate this appropriately
+         profileImages
+ */
+ 
+ 
         print("\nMatchContainerViewController\nviewDidLoad\nname:\(self.profile.name) and \(self.profile.userGenderPreference)")
         
         upperMessageLabel.text = "...your Potential \(self.profile.userGenderPreferenceLabel()) \(self.profile.name)";

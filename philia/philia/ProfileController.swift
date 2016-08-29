@@ -28,7 +28,17 @@ class ProfileController: UIViewController,UINavigationControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         print("\nProfileController\nviewDidLoad\nname:\(profile.name)")
+        
+        /*
+         let json = [ "interest": profile.userInterest, "genderInterest": profile.userGenderPreference, "datingIntension": profile.userIntensionPreference, "city": profile.location, "state": "?", "zipcode": "?", "country": "US", "firstName": fullNameArr[0], "lastName": lastName, "birthdate": profile.birthday, "age": ageComponents ]
+         
+         //UIDevice.currentDevice().identifierForVendor!.UUIDString
+         
+         HttpHelper.httpHelper.getUserProfile(json);
+         // fill in the view with the user's information
+ */
         
        self.messageButton.layer.cornerRadius = 10
        self.matchDetail.layer.cornerRadius = 10

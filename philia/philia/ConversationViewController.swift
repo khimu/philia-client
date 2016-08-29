@@ -11,7 +11,7 @@ import UIKit
 
 class ConversationViewController: UITableViewController { //, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var conversationTextField: UITableViewCell!
+    //@IBOutlet weak var conversationTextField: UITableViewCell!
     
     
     var textArray = ["dfa","adf","adf","adf","adfasd"]
@@ -31,6 +31,17 @@ class ConversationViewController: UITableViewController { //, UITableViewDataSou
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /*
+         let json = [ "interest": profile.userInterest, "genderInterest": profile.userGenderPreference, "datingIntension": profile.userIntensionPreference, "city": profile.location, "state": "?", "zipcode": "?", "country": "US", "firstName": fullNameArr[0], "lastName": lastName, "birthdate": profile.birthday, "age": ageComponents ]
+         
+         //UIDevice.currentDevice().identifierForVendor!.UUIDString
+         
+         
+         HttpHelper.httpHelper.saveConversation(json);
+         
+         HttpHelper.httpHelper.getConversation(json);
+ */
 
     }
     
